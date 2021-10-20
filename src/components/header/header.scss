@@ -1,0 +1,182 @@
+@import '../../styles/break-points';
+
+.header {
+  background-color: var(--white);
+  padding: 1em;
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 170px;
+
+    .link {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .nav {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(var(--white-rgb), 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100vw);
+    transition: 0.25s all;
+    &.-active {
+      transform: translateX(0);
+
+      .list {
+        transform: translateX(0);
+        transition: 0.75s all;
+        transform: translateY(-3em);
+      }
+    }
+
+    .list {
+      text-align: center;
+      transform: translateX(-100vw);
+      transition: 0.25s all;
+    }
+
+    .listitem {
+      padding: 0.5em;
+      margin: 1.5em 0;
+    }
+
+    .listlink {
+      font-size: 1.5em;
+      color: var(--grey-3);
+      &.-active {
+        color: var(--primary-1);
+      }
+    }
+  }
+
+  .socialmedia {
+    position: fixed;
+    z-index: 51;
+    bottom: 1em;
+    transform: translateX(-100vw);
+    transition: 0.25s all;
+    &.-active {
+      transform: translateX(0);
+      transition: 0.95s all;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75em;
+    }
+
+    .listitem {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5em;
+      justify-content: right;
+      align-items: center;
+    }
+
+    .icon {
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+      &.phone {
+        background-image: url(../../images/header/ico-phone.svg);
+        width: 15px;
+        height: 15px;
+      }
+      &.whats {
+        background-image: url(../../images/header/ico-whats.svg);
+        width: 18px;
+        height: 18px;
+      }
+      &.mail {
+        background-image: url(../../images/header/ico-mail.svg);
+        width: 16px;
+        height: 11px;
+      }
+    }
+  }
+
+  .menu-icon {
+    background-color: transparent;
+    background-image: url(../../images/menu-icon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 28px;
+    height: 28px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    &.-active {
+      background-image: url(../../images/menu-icon-active.svg);
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  .header {
+    padding: 1.5em 1em;
+
+    .flex {
+      justify-content: space-between;
+    }
+
+    .nav {
+      position: initial;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      transform: translateX(0);
+
+      .list {
+        display: flex;
+        transform: translateX(0);
+      }
+
+      .listitem {
+        margin: 0;
+        padding: 1em;
+      }
+
+      .listlink {
+        font-size: 1.25em;
+        padding: 0.5em;
+        &:hover {
+          color: var(--secondary-1);
+        }
+      }
+    }
+
+    .socialmedia {
+      position: initial;
+      transform: translateX(0);
+    }
+
+    .menu-icon {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  .header {
+
+    .nav .list .listitem .listlink {
+      padding: 0.75em;
+    }
+  }
+}

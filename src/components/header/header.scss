@@ -90,7 +90,6 @@
     .icon {
       background-size: contain;
       background-repeat: no-repeat;
-      display: block;
       &.phone {
         background-image: url(../../images/header/ico-phone.svg);
         width: 15px;
@@ -106,6 +105,10 @@
         width: 16px;
         height: 11px;
       }
+    }
+
+    .text {
+      font-size: 0.8em;
     }
   }
 

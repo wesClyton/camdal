@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Header from '../components/header/header';
+import Footer from '../components/footer/footer';
 import './index.scss';
 
 const IndexPage = () => {
@@ -7,11 +8,9 @@ const IndexPage = () => {
     <>
       <Header></Header>
 
-      <main className="index-page">
+      <main className="index-page"></main>
 
-      </main>
-
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </>
   );
 };

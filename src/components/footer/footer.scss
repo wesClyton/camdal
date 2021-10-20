@@ -1,0 +1,129 @@
+@import '../../styles/break-points';
+
+.footer {
+  border-top: 1px solid var(--grey-4);
+  padding: 2em 0;
+
+  .list {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5em;
+
+    .listitem {
+      display: flex;
+      width: 45%;
+      flex-direction: column;
+      gap: 0.5em;
+      text-align: center;
+      align-items: center;
+    }
+
+    .icon {
+      width: 75px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      &.card {
+        height: 56px;
+        background-image: url(../../images/footer/card.svg);
+      }
+      &.money {
+        height: 75px;
+        background-image: url(../../images/footer/money.svg);
+      }
+      &.support {
+        height: 75px;
+        background-image: url(../../images/footer/support.svg);
+      }
+      &.car {
+        height: 53px;
+        background-image: url(../../images/footer/car.svg);
+      }
+    }
+
+    .text {
+      font-size: 0.9em;
+    }
+  }
+
+  .bottom {
+    background-color: var(--primary-1);
+    padding: 1em;
+    margin-top: 2em;
+  }
+
+  .socialmedialist {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+
+    .link {
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      &.whats {
+        width: 24px;
+        height: 24px;
+        background-image: url(../../images/footer/whats.png);
+      }
+      &.facebook {
+        width: 12px;
+        height: 24px;
+        background-image: url(../../images/footer/facebook.png);
+      }
+      &.instagram {
+        width: 24px;
+        height: 24px;
+        background-image: url(../../images/footer/instagram.png);
+      }
+      &.linkedin {
+        width: 24px;
+        height: 24px;
+        background-image: url(../../images/footer/linkedin.png);
+      }
+    }
+  }
+
+  .address {
+    text-align: center;
+  }
+
+  .copy {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 0.8em;
+    justify-content: center;
+
+    .text,
+    .pipe,
+    .link {
+      color: var(--white);
+    }
+
+    .link {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .footer {
+
+    .list {
+      flex-wrap: nowrap;
+      gap: 6em;
+      justify-content: center;
+
+      .listitem {
+        width: auto;
+      }
+    }
+  }
+}

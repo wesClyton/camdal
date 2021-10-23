@@ -1,0 +1,48 @@
+@import '../../styles/break-points';
+
+.banner {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-image: url(../../images/home/banner.png);
+  background-size: cover;
+  text-align: center;
+  padding: 4em 2em;
+  position: relative;
+  &.center {
+    background-position: center center;
+  }
+
+  .text {
+    font-size: 2em;
+  }
+
+  h1 {
+    border: 0;
+  }
+}
+
+@media (min-width: $md) {
+  .banner {
+
+    .infos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      max-width: 875px;
+      justify-content: end;
+      margin: 0 auto;
+      padding-top: 11em;
+
+      .btn {
+        width: 200px;
+      }
+    }
+
+    .text {
+      font-size: 3.1em;
+    }
+  }
+}

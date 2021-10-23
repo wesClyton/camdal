@@ -1,0 +1,43 @@
+@import '../styles/break-points';
+
+.index-page {
+  .sobre {
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      align-items: flex-start;
+
+      .text {
+
+        .btn {
+          width: 200px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      .image {
+        max-width: 470px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .index-page {
+    .sobre {
+
+      .flex {
+        flex-direction: row;
+        gap: 4em;
+
+        .text {
+          flex: 1;
+        }
+      }
+    }
+  }
+}

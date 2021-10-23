@@ -84,12 +84,16 @@ h4,
 h5,
 h6 {
   padding: 0.15em 0 0.5em 0;
-  color: var(--primary-1);
+  color: var(--secondary-1);
   font-family: var(--font-family-700);
 }
 
 h1 {
+  padding: 0.15em 0 0.1em 0;
+  margin-bottom: 0.4em;
   font-size: 2.25em;
+  display: inline-block;
+  border-bottom: 3px solid var(--primary-4);
 }
 h2 {
   font-size: 2em;

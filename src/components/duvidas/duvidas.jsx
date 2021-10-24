@@ -39,16 +39,6 @@ class Duvidas extends Component {
         }
       ]
     }
-
-    this.duvidas = this.state.duvidas.map(item => {
-      return <li className="duvida-item">
-        <div className="texto">
-          <strong>{ item.pergunta }</strong>
-          <p>{ item.resposta }</p>
-        </div>
-        <button className="icone" onClick={ this.duvidaToggle }></button>
-      </li>
-    });
   }
 
   duvidaToggle(event) {
@@ -70,7 +60,17 @@ class Duvidas extends Component {
           <h1>O que saber antes de alugar um carro?</h1>
           <div className="flex">
             <div className="duvidas">
-              <ul>{ this.duvidas }</ul>
+              <ul>
+                { this.state.duvidas.map((item, index) =>
+                  <li key={ index } className="duvida-item">
+                    <div className="texto">
+                      <strong>{ item.pergunta }</strong>
+                      <p>{ item.resposta }</p>
+                    </div>
+                    <button className="icone" onClick={ this.duvidaToggle }></button>
+                  </li>
+                )}
+              </ul>
             </div>
 
             <div className="icones">

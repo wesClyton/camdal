@@ -1,0 +1,66 @@
+@import '../styles/break-points';
+
+.sobre-page {
+
+  .sobre,
+  .cianorte {
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .sobre-page {
+
+    .sobre {
+
+      .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .imagem {
+        flex: 1;
+
+        img {
+          margin: 0 auto;
+        }
+      }
+
+      .textoempresa {
+        flex: 1;
+      }
+
+      .infos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+      }
+
+    }
+
+    .cianorte {
+
+      .flex {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .texto,
+        .imagem {
+          flex: 1;
+
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

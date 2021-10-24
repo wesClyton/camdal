@@ -1,0 +1,193 @@
+@import '../../styles/break-points';
+
+.duvidasfrequentes {
+
+  .textos {
+
+    h1,
+    p {
+      text-align: center;
+    }
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    .icone {
+      display: none;
+    }
+  }
+
+  .duvidas {
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      li {
+        padding: 1em 0.5em;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid var(--grey-4);
+        &:last-child {
+          border-bottom: none;
+        }
+        &.active {
+          align-items: flex-start;
+
+          .texto {
+
+            p {
+              opacity: 1;
+              height: auto;
+              transition: 0.5s all;
+              padding-top: 1em;
+            }
+          }
+
+          .icone {
+            background-image: url(../../images/duvidas/seta.svg);
+            transform: translateY(-1em);
+            transform: rotateX(180deg);
+          }
+        }
+
+        .texto {
+          color: var(--grey-2);
+          flex: 1;
+
+          p {
+            padding-bottom: 0;
+            height: 0px;
+            opacity: 0;
+          }
+        }
+
+        .icone {
+          width: 25px;
+          height: 25px;
+          display: block;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          background-image: url(../../images/duvidas/seta.svg);
+          background-color: transparent;
+          flex: 0.1;
+          max-width: 25px;
+        }
+      }
+    }
+  }
+
+  .icones {
+
+    .listicon {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1em;
+      flex-wrap: wrap;
+
+      .item {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+        border: 1px solid var(--primary-1);
+        border-radius: 20px;
+
+        .icon {
+          flex: 1em;
+          width: 100%;
+          gap: 1em;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          i {
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            width: 50px;
+            height: 50px;
+            display: block;
+          }
+        }
+
+        .protecaoveiculo i {
+          background-image: url(../../images/duvidas/protecao-do-veiculo.svg);
+        }
+        .protecaoterceiros i {
+          background-image: url(../../images/duvidas/protecao-terceiros.svg);
+        }
+        .caucao i {
+          background-image: url(../../images/duvidas/caucao.svg);
+        }
+        .opcionais i {
+          background-image: url(../../images/duvidas/opcionais.svg);
+        }
+
+        p {
+          flex: 1;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: $md) {
+  .duvidasfrequentes {
+
+    .flex {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1em;
+      margin-top: 2em;
+
+      .duvidas {
+        flex: 1.25;
+        max-width: 570px;
+
+        ::-webkit-scrollbar{
+          width: 15px;
+          height: 15px;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: var(--primary-1);
+          border-radius: 10px;
+          border: 4.5px solid var(--grey-5);
+        }
+        ::-webkit-scrollbar-track{
+          background: var(--grey-5);
+          border-radius: 10px;
+        }
+
+        ul {
+          max-height: 550px;
+          overflow-y: scroll;
+
+          li {
+            margin-right: 1em;
+          }
+        }
+      }
+
+      .icones {
+        flex: 1;
+        display: block;
+      }
+    }
+  }
+}

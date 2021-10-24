@@ -4,6 +4,7 @@ import Banner from '../components/banner/banner';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import ImgSobre from '../images/home/sobre.png';
+import Duvidas from '../components/duvidas/duvidas';
 import './index.scss';
 
 const IndexPage = () => {
@@ -60,6 +61,8 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
+
+        <Duvidas></Duvidas>
       </main>
 
       <Footer></Footer>

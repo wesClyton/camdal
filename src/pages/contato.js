@@ -5,15 +5,18 @@ import Header from '../components/header/header';
 import './contato.scss';
 
 const ContatoPage = () => {
+
+  const title = 'Contato';
+
   return (
     <>
-      <Header title="Contato"></Header>
+      <Header title={ title }></Header>
 
       <main className="contato-page color-grey-5">
         <Banner hideInfos={ true } bgCenter={ true }></Banner>
 
         <div className="container py-2">
-          <h1>Contato</h1>
+          <h1>{ title }</h1>
         </div>
       </main>
 

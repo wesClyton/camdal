@@ -7,14 +7,14 @@ class Banner extends Component {
     super(props);
 
     this.state = {
-      center: props.center,
+      bgCenter: props.bgCenter,
       hideInfos: props.hideInfos
     }
   }
 
   render() {
     return <>
-      <section className={ `banner ${this.state.center ? 'center' : ''}` }>
+      <section className={ `banner ${this.state.bgCenter ? 'center' : ''}` }>
         <div className={ `infos ${this.state.hideInfos ? 'd-none' : ''}` }>
           <h1 className="color-text-white text ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h1>
           <a

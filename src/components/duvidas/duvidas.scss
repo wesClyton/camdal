@@ -106,6 +106,10 @@
         border: 1px solid var(--primary-1);
         border-radius: 20px;
 
+        strong {
+          font-size: 0.9em;
+        }
+
         .icon {
           flex: 1em;
           width: 100%;

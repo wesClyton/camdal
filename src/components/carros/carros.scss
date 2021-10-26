@@ -1,6 +1,10 @@
 @import '../../styles/break-points';
 
 .carrolist {
+  .carousel .control-dots .dot.selected {
+    background-color: var(--primary-1);
+    box-shadow: none;
+  }
 
   .carroitem {
     padding: 1em 1em 3em 1em;

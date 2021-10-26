@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ImgCarro01 from '../../images/nossos-carros/01.png';
 import ImgCarro02 from '../../images/nossos-carros/02.png';
 import ImgCarro03 from '../../images/nossos-carros/03.png';
@@ -14,7 +16,9 @@ class Carros extends Component {
         grupo: 'A',
         grupoDescricao: 'Compacto (ECMN)',
         fotos: [
-          ImgCarro01
+          ImgCarro01,
+          ImgCarro02,
+          ImgCarro03
         ],
         caracteristicas: [
           '4 portas',
@@ -31,7 +35,9 @@ class Carros extends Component {
         grupo: 'B',
         grupoDescricao: 'Compacto Com Ar (ECMR)',
         fotos: [
-          ImgCarro02
+          ImgCarro02,
+          ImgCarro03,
+          ImgCarro01
         ],
         caracteristicas: [
           '4 portas',
@@ -48,7 +54,9 @@ class Carros extends Component {
         grupo: 'C',
         grupoDescricao: 'Econômico Com Ar (EDMR)',
         fotos: [
-          ImgCarro03
+          ImgCarro03,
+          ImgCarro02,
+          ImgCarro01
         ],
         caracteristicas: [
           '4 portas',
@@ -74,10 +82,17 @@ class Carros extends Component {
             <div className="grupo">
               <h4>Grupo <span className="color-text-primary-1">{ carro.grupo }</span></h4>
               <p>{ carro.grupoDescricao }</p>
-
-              { carro.fotos.map((foto, index) =>
-                <img key={ index } src={ foto } alt={ carro.grupoDescricao } />
-              )}
+              <Carousel
+                key={ index }
+                showThumbs={ false }
+                showStatus={ false }
+                emulateTouch={ true }>
+                { carro.fotos.map((foto, index) =>
+                  <div key={ index }>
+                    <img src={ foto } alt={ carro.grupoDescricao } />
+                  </div>
+                )}
+              </Carousel>
             </div>
             <div className="caracteristicas">
               <ul className="list">

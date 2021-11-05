@@ -13,12 +13,10 @@ class Carros extends Component {
 
     this.carros = [
       {
-        grupo: 'A',
+        grupo: 'Grupo B / C',
         grupoDescricao: 'Compacto (ECMN)',
         fotos: [
           ImgCarro01,
-          ImgCarro02,
-          ImgCarro03
         ],
         caracteristicas: [
           '4 portas',
@@ -32,12 +30,10 @@ class Carros extends Component {
         ]
       },
       {
-        grupo: 'B',
+        grupo: 'Grupo FS Sedan',
         grupoDescricao: 'Compacto Com Ar (ECMR)',
         fotos: [
-          ImgCarro02,
-          ImgCarro03,
-          ImgCarro01
+          ImgCarro02
         ],
         caracteristicas: [
           '4 portas',
@@ -51,12 +47,10 @@ class Carros extends Component {
         ]
       },
       {
-        grupo: 'C',
+        grupo: 'Grupo GX',
         grupoDescricao: 'Econômico Com Ar (EDMR)',
         fotos: [
-          ImgCarro03,
-          ImgCarro02,
-          ImgCarro01
+          ImgCarro03
         ],
         caracteristicas: [
           '4 portas',

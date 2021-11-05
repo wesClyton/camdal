@@ -57,11 +57,11 @@ class Header extends Component {
                 <ul className="list">
                   <li className="listitem">
                     <i className="icon phone"></i>
-                    <span className="text">(44) 9 9999-9999</span>
+                    <span className="text">(44) 3631-6152</span>
                   </li>
                   <li className="listitem">
                     <i className="icon whats"></i>
-                    <span className="text">(44) 9 9999-9999</span>
+                    <span className="text">(44) 3039-4721</span>
                   </li>
                   <li className="listitem">
                     <i className="icon mail"></i>

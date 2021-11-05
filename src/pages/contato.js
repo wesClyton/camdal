@@ -25,11 +25,15 @@ const ContatoPage = () => {
               <h5>Contatos</h5>
               <div className="iconetexto">
                 <i className="icon telefone"></i>
-                <span>(44) 9 9999-9999</span>
+                <span>(44) 3631-6152</span>
+              </div>
+              <div className="iconetexto">
+                <i className="icon telefone"></i>
+                <span>(44) 3631-6463</span>
               </div>
               <div className="iconetexto">
                 <i className="icon whats"></i>
-                <span>(44) 9 9999-9999</span>
+                <span>(44) 3039-4721</span>
               </div>
 
               <h5>Redes sociais</h5>

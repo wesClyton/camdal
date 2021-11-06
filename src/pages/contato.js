@@ -59,7 +59,7 @@ const ContatoPage = () => {
 
             <div className="mapa">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24495.421433813353!2d-52.624511582836135!3d-23.664173169755344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed5a10a4b58527%3A0x4e632448e884ca8!2sCianorte%2C%20PR%2C%2087200-000!5e0!3m2!1spt-BR!2sbr!4v1635107356683!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.4430889111254!2d-52.603233285020444!3d-23.66010748463393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed5a140181fe4b%3A0xc258aaccbb3195a0!2sAv.%20Goi%C3%A1s%2C%201178%20-%20Zona%205%20(Armazens)%2C%20Cianorte%20-%20PR%2C%2087200-000!5e0!3m2!1spt-BR!2sbr!4v1636218006987!5m2!1spt-BR!2sbr"
                 allowFullScreen
                 loading="lazy">
               </iframe>

@@ -16,7 +16,7 @@ class Banner extends Component {
     return <>
       <section className={ `banner ${this.state.bgCenter ? 'center' : ''}` }>
         <div className={ `infos ${this.state.hideInfos ? 'd-none' : ''}` }>
-          <h1 className="color-text-white text ">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h1>
+          <h1 className="color-text-white text ">A mobilidade e o cuidado que você precisa com veículos novos e os melhores preços. <br/>Conte com a gente!</h1>
           <a
             className="btn btn-md btn-primary"
             href="https://api.whatsapp.com/send?phone=5544999999999"

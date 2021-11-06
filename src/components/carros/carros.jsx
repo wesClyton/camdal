@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import ImgCarro01 from '../../images/nossos-carros/01.png';
-import ImgCarro02 from '../../images/nossos-carros/02.png';
-import ImgCarro03 from '../../images/nossos-carros/03.png';
+import ImgKa1 from '../../images/nossos-carros/ka1.png';
+import ImgKa2 from '../../images/nossos-carros/ka2.png';
+import ImgEtios1 from '../../images/nossos-carros/etios1.png';
+import ImgEtios2 from '../../images/nossos-carros/etios2.png';
+import ImgDuster1 from '../../images/nossos-carros/duster1.png';
+import ImgDuster2 from '../../images/nossos-carros/duster2.png';
 import './carros.scss';
 
 class Carros extends Component {
@@ -13,56 +16,75 @@ class Carros extends Component {
 
     this.carros = [
       {
-        grupo: 'Grupo B / C',
-        grupoDescricao: 'Compacto (ECMN)',
+        grupo: 'B/C Hatch',
+        grupoDescricao: 'Compacto/Econômico com ar',
         fotos: [
-          ImgCarro01,
+          ImgKa1,
+          ImgKa2
         ],
         caracteristicas: [
-          '4 portas',
-          'ABS',
-          '1 mala(s) pequena(s)',
-          'Air bag',
-          'Vidro elétrico',
-          'Dir. Hidráulica',
-          '5 pessoas',
-          'Motor 1.6'
+          '04 portas',
+          'Freios ABS ',
+          'Porta Malas -  257 Litros ',
+          'Air Bag Duplo',
+          'Vidros Elétricos',
+          'Travas Elétricas',
+          'Sistema de Som',
+          'Direção Elétrica ',
+          'Volante com Regulagem de Altura',
+          'Ar Condicionado',
+          '05 Ocupantes',
+          'Motor 1.0 – 03 Cilindros',
+          'Computador de Bordo'
         ]
       },
       {
-        grupo: 'Grupo FS Sedan',
-        grupoDescricao: 'Compacto Com Ar (ECMR)',
+        grupo: 'FS',
+        grupoDescricao: 'Intermediário Sedan',
         fotos: [
-          ImgCarro02
+          ImgEtios1,
+          ImgEtios2
         ],
         caracteristicas: [
-          '4 portas',
-          'ABS',
-          '1 mala(s) pequena(s)',
-          'Air bag',
-          'Vidro elétrico',
-          'Ar-condicionado',
-          'Trava elétrica',
-          'Dir. Hidráulica'
+          '04 portas',
+          'Freios ABS ',
+          'Porta Malas -  562 Litros ',
+          'Air Bag Duplo',
+          'Vidros Elétricos',
+          'Travas Elétricas',
+          'Sistema de Som',
+          'Direção Elétrica',
+          'Volante com Regulagem de Altura',
+          'Ar Condicionado',
+          '05 Ocupantes',
+          'Motor 1.5',
+          'Cambio 6 Marchas - Mecânico',
+          'Computador de Bordo',
+          'Banco de Couro ou Tecido'
         ]
       },
       {
-        grupo: 'Grupo GX',
-        grupoDescricao: 'Econômico Com Ar (EDMR)',
+        grupo: 'GX',
+        grupoDescricao: 'SUV automático',
         fotos: [
-          ImgCarro03
+          ImgDuster1,
+          ImgDuster2
         ],
         caracteristicas: [
-          '4 portas',
-          'ABS',
-          '1 mala(s) pequena(s)',
-          'Air bag',
-          'Vidro elétrico',
-          'Ar-condicionado',
-          'Trava elétrica',
-          'Dir. Hidráulica',
-          '5 pessoas',
-          'Motor 1.6'
+          '04 portas',
+          'Freios ABS ',
+          'Porta Malas -  475 Litros',
+          'Air Bag Duplo',
+          'Vidros Elétricos',
+          'Travas Elétricas',
+          'Central Multimidia',
+          'Direção Hidráulica',
+          'Volante com Regulagem de Altura',
+          'Ar Condicionado',
+          '05 Ocupantes',
+          'Motor 1.5 ',
+          'Cambio Automático',
+          'Computador de Bordo'
         ]
       }
     ]
@@ -70,6 +92,7 @@ class Carros extends Component {
 
   render() {
     return <>
+      <small className="py-2 d-block">* As imagens dos veículos exibidos neste site são meramente ilustrativas.</small>
       <ul className="carrolist">
         { this.carros.map((carro, index) =>
           <li key={ index } className="carroitem">

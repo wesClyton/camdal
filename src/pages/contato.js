@@ -20,7 +20,7 @@ const ContatoPage = () => {
 
           <div className="flex">
             <div className="textos">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              <p>Estamos sempre preparados para ajudar você no que for preciso. Dúvidas, solicitação ou sugestões? Entre em contato com a gente!</p>
 
               <h5>Contatos</h5>
               <div className="iconetexto">
@@ -39,21 +39,21 @@ const ContatoPage = () => {
               <h5>Redes sociais</h5>
               <div className="iconetexto">
                 <i className="icon instagram"></i>
-                <span>@camdalalugueldecarros</span>
+                <span>em breve</span>
               </div>
               <div className="iconetexto">
                 <i className="icon facebook"></i>
-                <span>/camdalalugueldecarros</span>
+                <span>/camdallocadora</span>
               </div>
               <div className="iconetexto">
                 <i className="icon linkedin"></i>
-                <span>/camdalalugueldecarros</span>
+                <span>em breve</span>
               </div>
 
               <h5>Endereço</h5>
               <div className="iconetexto">
                 <i className="icon endereco"></i>
-                <span>Rua Aaaaaaaaa, 999, CEP: 99.999-999  - Centro | Cianorte-PR</span>
+                <span>Avenida Goias, 1178, Zona 5 - Cianorte-PR - CEP: 87209-006</span>
               </div>
             </div>
 

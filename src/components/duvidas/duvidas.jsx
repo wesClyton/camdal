@@ -99,28 +99,28 @@ class Duvidas extends Component {
                     <i></i>
                     <strong>Proteções do veículo</strong>
                   </div>
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                  <p>Nossos veículos já saem com proteção total, garantindo assim a tranquilidade necessária para o uso durante o período contratado.</p>
                 </li>
                 <li className="item">
-                  <div className="icon protecaoterceiros">
+                  <div className="icon conforto">
                     <i></i>
-                    <strong>Proteções a terceiros</strong>
+                    <strong>Conforto</strong>
                   </div>
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                  <p>Todos veículos têm disponível Ar Condicionado, Direção Elétrica ou Hidráulica, Sistema de Som e Alarme, além do rastreamento dos veículos.</p>
                 </li>
                 <li className="item">
                   <div className="icon caucao">
                     <i></i>
                     <strong>Caução</strong>
                   </div>
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                  <p>O locatário deverá apresentar cartão de crédito válido, dentro do prazo de vencimento, com limite de crédito disponível para pre-autorização.</p>
                 </li>
                 <li className="item">
                   <div className="icon opcionais">
                     <i></i>
                     <strong>Opcionais</strong>
                   </div>
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                  <p>Nossa frota dispõe de sistema de som com bluetooth, opção para Pen Drive, e nos SUV’s, multi mídia com GPS integrado.</p>
                 </li>
               </ul>
             </div>

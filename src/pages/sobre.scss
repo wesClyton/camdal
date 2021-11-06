@@ -3,7 +3,8 @@
 .sobre-page {
 
   .sobre,
-  .cianorte {
+  .cianorte,
+  .localizacao-estrategia {
 
     .flex {
       display: flex;
@@ -12,6 +13,8 @@
       align-items: center;
     }
   }
+
+
 }
 
 @media (min-width: $md) {
@@ -39,8 +42,23 @@
       .infos {
         display: flex;
         justify-content: center;
-        align-items: center;
         gap: 2em;
+
+        .missao-visao {
+          flex: 1;
+        }
+
+        .valores {
+          flex: 2;
+
+          ul {
+
+            li {
+              display: block;
+              padding: 0.5em;
+            }
+          }
+        }
       }
 
     }
@@ -59,6 +77,29 @@
           img {
             margin: 0 auto;
           }
+        }
+      }
+    }
+
+    .localizacao-estrategia {
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+
+
+        .texto {
+          flex: 1.75;
+        }
+
+        .imagem {
+          flex: 1;
+        }
+
+        .imagem img {
+          margin: 0 auto;
         }
       }
     }

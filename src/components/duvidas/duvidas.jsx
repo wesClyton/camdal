@@ -12,33 +12,45 @@ class Duvidas extends Component {
     this.state = {
       duvidas: [
         {
-          pergunta: 'Contrary to popular belief?',
-          resposta: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.'
+          pergunta: 'Requisitos para alugar um carro',
+          resposta: [
+            '• O locatário/condutor deverá possuir idade mínima de 21 anos.',
+            '• O locatário deverá apresentar seu documento de habilitação original, emitido há mais de 2 anos (CNH Definitiva), válido e dentro do prazo de vencimento.',
+            '• Estrangeiros deverão apresentar passaporte, habilitação válida e visto de permanência.',
+            '• O locatário deverá apresentar cartão de crédito válido, dentro do prazo de vencimento, com limite de crédito disponível para pre-autorização. No caso de o locatário não possuir limite no cartão, poderá ser utilizado a modalidade de caução com PIX, porém, é cobrada uma taxa proporcional ao valor caucionado.',
+            '• Não serão aceitos pagamentos em dinheiro.'
+          ]
         },
         {
-          pergunta: 'Contrary to popular belief?',
-          resposta: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.'
+          pergunta: 'Sobre a diária',
+          resposta: [
+            'A diária do carro é de 24 horas, com até 1 hora de tolerância para devolução. A partir da 25ª hora, incidirá cobrança de diária extra;'
+          ]
         },
         {
-          pergunta: 'Contrary to popular belief?',
-          resposta: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.'
+          pergunta: 'Reservas de longa duração',
+          resposta: [
+            'Para reservas superiores a 30 dias, o cliente deverá realizar um Contrato Mensal. Caso queira permanecer com o carro alugado, você deverá dirigir-se pessoalmente a Loja para confirmar a disponibilidade do veículo locado, confirmar o novo período e assinar o novo contrato.'
+          ]
         },
         {
-          pergunta: 'Contrary to popular belief?',
-          resposta: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.'
+          pergunta: 'Entregas de veículos',
+          resposta: [
+            'Para entrega de veículos em outra cidade, consulte valores;'
+          ]
         },
         {
-          pergunta: 'Contrary to popular belief?',
-          resposta: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.'
+          pergunta: 'Motoristas Adicionais',
+          resposta: [
+            'O cliente pode nomear até 4 (quatro) motoristas adicionais, implicando no pagamento da taxa diária vigente.'
+          ]
         },
         {
-          pergunta: 'Contrary to popular belief?',
-          resposta: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.'
+          pergunta: 'Reservas por grupos de veículos',
+          resposta: [
+            'A locadora não garante a reserva de carro por marca, modelo, cor ou configuração específica. O locatário deve optar por um dos carros disponíveis e pertencentes ao grupo, no dia da abertura do contrato de locação e retirada do carro junto à loja. As características dos carros apresentadas neste website poderão sofrer variações entre os próprios carros do grupo e lojas de atendimento da locadora.'
+          ]
         },
-        {
-          pergunta: 'Contrary to popular belief?',
-          resposta: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.'
-        }
       ]
     }
   }
@@ -84,7 +96,9 @@ class Duvidas extends Component {
                   <li key={ index } className="duvida-item" onClick={ this.duvidaToggle }>
                     <div className="texto">
                       <strong>{ item.pergunta }</strong>
-                      <p>{ item.resposta }</p>
+                      { item.resposta.map((item, index) =>
+                        <p key="index">{ item }</p>
+                      )}
                     </div>
                     <button className="icone"></button>
                   </li>

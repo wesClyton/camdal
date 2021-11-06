@@ -1,57 +1,120 @@
-.em-breve-page {
-  display: flex;
-  background-color: var(--grey-5);
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+@import '../styles/break-points';
 
-  .em-breve {
-    text-align: center;
-    display: block;
-    margin-top: 3em;
+.index-page {
+
+  .sobre {
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      align-items: flex-start;
+
+      .text {
+
+        .btn {
+          width: 200px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      .image {
+        max-width: 470px;
+        margin: 0 auto;
+      }
+    }
   }
 
-  .box {
-    padding: 3em;
-    background-color: var(--white);
-    border-radius: 20px;
+  .nossoscarros {
+    background-color: var(--grey-5);
 
-    .contatos {
+    .flex {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
 
-      .iconetexto {
+    .listicons {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .item {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        width: 45%;
         gap: 0.5em;
-        padding: 0.25em 0;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        padding: 1em;
+        border-radius: 10px;
 
         .icon {
-          width: 16px;
-          height: 16px;
+          width: 75px;
+          height: 75px;
           background-repeat: no-repeat;
           background-position: center;
-          background-size: contain;
-          &.telefone {
-            background-image: url(../images/contato/phone.png);
+          background-size: cover;
+          &.carroslimpos {
+            background-image: url(../images/home/carros-limpos.svg);
           }
-          &.whats {
-            background-image: url(../images/contato/whats.png);
+          &.revisao {
+            background-image: url(../images/home/revisao-em-dia.svg);
           }
-          &.instagram {
-            background-image: url(../images/contato/instagram.png);
+          &.semtaxas {
+            background-image: url(../images/home/sem-taxas-ocultas.svg);
           }
-          &.facebook {
-            background-image: url(../images/contato/facebook.png);
-          }
-          &.linkedin {
-            background-image: url(../images/contato/linkedin.png);
-          }
-          &.endereco {
-            background-image: url(../images/contato/pin.png);
+          &.alugueis {
+            background-image: url(../images/home/alugueis-flexiveis.svg);
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .index-page {
+
+    .sobre {
+
+      .flex {
+        flex-direction: row;
+        gap: 4em;
+
+        .text {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  .index-page {
+
+    .nossoscarros {
+      background-image: url(../images/home/nossos-carros.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      .flex {
+        flex-direction: row;
+        gap: 4em;
+      }
+
+      .icones {
+        flex: 1;
+      }
+
+      .text {
+        flex: 2;
       }
     }
   }

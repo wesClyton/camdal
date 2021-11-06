@@ -6,6 +6,8 @@ class Duvidas extends Component {
   constructor(props) {
     super(props);
     this.duvidaToggle = this.duvidaToggle.bind(this);
+    this.removeClasseActive = this.removeTodasAsClassesActive.bind(this);
+    this.addClasseTarget = this.addClasseTarget.bind(this);
 
     this.state = {
       duvidas: [
@@ -42,15 +44,32 @@ class Duvidas extends Component {
   }
 
   duvidaToggle(event) {
-    if (event.target.parentElement.classList.contains('active')) {
-      event.target.parentElement.classList.remove('active');
+    if (event.target.localName === 'li') {
+      this.addClasseTarget(event.target);
+    }
+    if (event.target.localName === 'strong' || event.target.localName === 'p') {
+      this.addClasseTarget(event.target.parentElement.parentElement);
+    }
+    if (event.target.localName === 'button') {
+      this.addClasseTarget(event.target.parentElement);
+    }
+  }
+
+  addClasseTarget(target) {
+    if (target.classList.contains('active')) {
+      target.classList.remove('active');
       return;
     }
+    this.removeTodasAsClassesActive();
+    target.classList.add('active');
+    return;
+  }
+
+  removeTodasAsClassesActive() {
     const duvidas = document.getElementsByClassName('duvida-item');
     for (let i = 0; i <= duvidas.length - 1; i++) {
       duvidas[i].classList.remove('active');
     }
-    event.target.parentElement.classList.add('active');
   }
 
   render() {
@@ -62,12 +81,12 @@ class Duvidas extends Component {
             <div className="duvidas">
               <ul>
                 { this.state.duvidas.map((item, index) =>
-                  <li key={ index } className="duvida-item">
+                  <li key={ index } className="duvida-item" onClick={ this.duvidaToggle }>
                     <div className="texto">
                       <strong>{ item.pergunta }</strong>
                       <p>{ item.resposta }</p>
                     </div>
-                    <button className="icone" onClick={ this.duvidaToggle }></button>
+                    <button className="icone"></button>
                   </li>
                 )}
               </ul>

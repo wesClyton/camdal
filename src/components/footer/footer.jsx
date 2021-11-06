@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React, { Component } from 'react';
 import './footer.scss';
 
@@ -47,9 +48,7 @@ class Footer extends Component {
           <small className="copy">
             <span className="text">©2021 - Todos os direitos reservados à Camdal - Aluguel de carros</span>
             <span className="pipe">|</span>
-            <a className="link" href="#" target="_blank" rel="noreferrer">Política de cookies</a>
-            <span className="pipe">|</span>
-            <a className="link" href="#" target="_blank" rel="noreferrer">Política de privacidade</a>
+            <Link className="link" to="/politica-de-privacidade">Política de privacidade</Link>
           </small>
         </section>
       </footer>

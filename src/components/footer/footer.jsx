@@ -23,7 +23,7 @@ class Footer extends Component {
             </li>
             <li className="listitem">
               <i className="icon car"></i>
-              <small>Serviço leva/busca carro</small>
+              <small>Serviço de Translado</small>
             </li>
           </ul>
         </div>
@@ -31,20 +31,20 @@ class Footer extends Component {
         <section className="bottom">
           <ul className="socialmedialist">
             <li>
-              <a className="link whats" href="#" target="_blank" rel="noreferrer"></a>
+              <a className="link whats" href="https://wa.me/554430394721" target="_blank" rel="noreferrer"></a>
             </li>
             <li>
-              <a className="link facebook" href="#" target="_blank" rel="noreferrer"></a>
+              <a className="link facebook" href="https://www.facebook.com/camdallocadora" target="_blank" rel="noreferrer"></a>
             </li>
             <li>
-              <a className="link instagram" href="#" target="_blank" rel="noreferrer"></a>
+              <a className="link instagram" href="#" title="Em breve" target="_blank" rel="noreferrer"></a>
             </li>
             <li>
-              <a className="link linkedin" href="#" target="_blank" rel="noreferrer"></a>
+              <a className="link linkedin" href="#" title="Em breve" target="_blank" rel="noreferrer"></a>
             </li>
           </ul>
 
-          <address className="address color-text-white mt-2">Rua Aaaaaaaa Aaaaaa, 999 - Centro | Cianorte-PR</address>
+          <address className="address color-text-white mt-2">Avenida Goias, 1178, Zona 5 | 87209-006 | Cianorte-PR</address>
           <small className="copy">
             <span className="text">©2021 - Todos os direitos reservados à Camdal - Aluguel de carros</span>
             <span className="pipe">|</span>
@@ -54,7 +54,7 @@ class Footer extends Component {
       </footer>
 
       <a
-        href="https://api.whatsapp.com/send?phone=5544999999999"
+        href="https://wa.me/554430394721"
         target="_blank"
         rel="noreferrer"
         className="whatsapp-fixed">

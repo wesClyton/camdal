@@ -81,7 +81,7 @@ const SobrePage = () => {
             <div className="flex">
               <div className="texto">
                 <h1>Localização Estratégica</h1>
-                <p>Cianorte tem destaque principalmente com relação ao meio ambiente, possuindo a segunda maior floresta urbana do Brasil o Parque Cinturão Verde, uma unidade de conservação e proteção integral, composta por 423 hectares de Mata Atlântica, circundando toda a cidade e abrigando animais silvestres, como macacos, quatis, cobras, ouriços, lagartos, pássaros, tamanduás e jaguatiricas, além de duas trilhas para passeios.</p>
+                <p>Cianorte encontra-se localizada no Noroeste Paranaense. A Cidade está estrategicamente no centro, a uma distância média de 80 a 90 Km das vizinhas, Maringá, Campo Mourão, Umuarama e Paranavaí.</p>
               </div>
               <div className="imagem">
                 <img src={ ImgMapa } alt="Mapa" />

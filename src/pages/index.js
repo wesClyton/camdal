@@ -20,7 +20,7 @@ const IndexPage = () => {
             <div className="flex">
               <div className="text">
                 <h1>Sobre</h1>
-                <p>Somos uma empresa especializada na locação de carros, modalidade RAC – Rent a Car. A Campal foi criada, sempre buscando a Excelência no atendimento aos clientes.</p>
+                <p>Somos uma empresa especializada na locação de carros, modalidade RAC – Rent a Car. A Camdal foi criada, sempre buscando a Excelência no atendimento aos clientes.</p>
                 <p>Quando alcançamos o entendimento completo das necessidades individuais de cada pessoa, nosso objetivo é atingido. Isto facilita na escolha do modelo de veículo a ser escolhido e também no modelo de contrato locação, diário, semanal, quinzenal ou mensal. Nossos colaboradores estão treinados para encontrar a solução ideal a cada ocasião, desde a simples locação para trabalho, uma viagem de final de ano com a família ou mesmo, para levar a noiva ao seu grande momento no altar.</p>
                 <p>Queremos que a experiência de locação de um automóvel aos nossos clientes, seja sempre única e com foco na confiança, e assim estreitamos os laços com cada cliente atendido, gerando compromisso de longo prazo com cada indivíduo.</p>
                 <p>Nossa loja está localizada na região central de Cianorte.</p>

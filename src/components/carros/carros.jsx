@@ -18,6 +18,7 @@ class Carros extends Component {
       {
         grupo: 'B/C Hatch',
         grupoDescricao: 'Compacto/Econômico com ar',
+        link: 'https://wa.link/isikda',
         fotos: [
           ImgKa1,
           ImgKa2
@@ -41,6 +42,7 @@ class Carros extends Component {
       {
         grupo: 'FS',
         grupoDescricao: 'Intermediário Sedan',
+        link: 'https://wa.link/6g1hyd',
         fotos: [
           ImgEtios1,
           ImgEtios2
@@ -66,6 +68,7 @@ class Carros extends Component {
       {
         grupo: 'GX',
         grupoDescricao: 'SUV automático',
+        link: 'https://wa.link/yhz63x',
         fotos: [
           ImgDuster1,
           ImgDuster2
@@ -119,7 +122,7 @@ class Carros extends Component {
               </ul>
               <a
                 className="btn btn-md btn-primary"
-                href="https://api.whatsapp.com/send?phone=5544999999999"
+                href={ carro.link }
                 target="_blank"
                 rel="noreferrer">
                   Reservar agora

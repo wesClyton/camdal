@@ -16,7 +16,7 @@ class Carros extends Component {
 
     this.carros = [
       {
-        grupo: 'B/C Hatch',
+        grupo: 'C Hatch',
         grupoDescricao: 'Compacto/Econômico com ar',
         link: 'https://wa.link/isikda',
         fotos: [

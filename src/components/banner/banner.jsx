@@ -19,7 +19,7 @@ class Banner extends Component {
           <h1 className="color-text-white text ">A mobilidade e o cuidado que você precisa com veículos novos e os melhores preços. <br/>Conte com a gente!</h1>
           <a
             className="btn btn-md btn-primary"
-            href="https://api.whatsapp.com/send?phone=5544999999999"
+            href="https://wa.me/554430394721"
             target="_blank"
             rel="noreferrer">
             Reservar Agora

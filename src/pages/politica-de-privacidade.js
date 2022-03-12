@@ -1,7 +1,4 @@
 import * as React from 'react';
-import Banner from '../components/banner/banner';
-import Carros from '../components/carros/carros';
-import Duvidas from '../components/duvidas/duvidas';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import './nossos-carros.scss';

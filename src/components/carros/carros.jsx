@@ -5,6 +5,8 @@ import ImgKa1 from '../../images/nossos-carros/ka1.png';
 import ImgKa2 from '../../images/nossos-carros/ka2.png';
 import ImgEtios1 from '../../images/nossos-carros/etios1.png';
 import ImgEtios2 from '../../images/nossos-carros/etios2.png';
+import ImgEtiosHatch1 from '../../images/nossos-carros/etios-hatch-1.png';
+import ImgEtiosHatch2 from '../../images/nossos-carros/etios-hatch-2.png';
 import ImgDuster1 from '../../images/nossos-carros/duster1.png';
 import ImgDuster2 from '../../images/nossos-carros/duster2.png';
 import './carros.scss';
@@ -17,7 +19,7 @@ class Carros extends Component {
     this.carros = [
       {
         grupo: 'C Hatch',
-        grupoDescricao: 'Compacto/Econômico com ar',
+        grupoDescricao: 'Compacto / Econômico com ar',
         link: 'https://wa.link/isikda',
         fotos: [
           ImgKa1,
@@ -88,6 +90,34 @@ class Carros extends Component {
           'Motor 1.5 ',
           'Cambio Automático',
           'Computador de Bordo'
+        ]
+      },
+      {
+        grupo: 'CE Hatch',
+        grupoDescricao: 'Compacto / Econômico Fast - Motor 1.3',
+        link: 'https://wa.link/isikda',
+        fotos: [
+          ImgEtiosHatch1,
+          ImgEtiosHatch2
+        ],
+        caracteristicas: [
+          '04 portas',
+          'Freios ABS',
+          'Porta Malas - 270 Litros',
+          'Air Bag Duplo',
+          'Vidros Elétricos',
+          'Travas Elétricas',
+          'Sistema de Som ',
+          'Câmera e Sensor de Ré',
+          'Faróis de neblina',
+          'Direção Elétrica',
+          'Volante com Regulagem de Altura',
+          'Ar Condicionado',
+          '05 Ocupantes',
+          'Motor 1.3',
+          'Cambio 6 Marchas - Mecânico',
+          'Computador de Bordo',
+          'Banco de Couro ou Tecido'
         ]
       }
     ]

@@ -9,6 +9,8 @@ import ImgEtiosHatch1 from '../../images/nossos-carros/etios-hatch-1.png';
 import ImgEtiosHatch2 from '../../images/nossos-carros/etios-hatch-2.png';
 import ImgDuster1 from '../../images/nossos-carros/duster1.png';
 import ImgDuster2 from '../../images/nossos-carros/duster2.png';
+import ImgHb201 from '../../images/nossos-carros/hb201.png';
+import ImgHb202 from '../../images/nossos-carros/hb202.png';
 import './carros.scss';
 
 class Carros extends Component {
@@ -23,7 +25,9 @@ class Carros extends Component {
         link: 'https://wa.link/isikda',
         fotos: [
           ImgKa1,
-          ImgKa2
+          ImgKa2,
+          ImgHb201,
+          ImgHb202
         ],
         caracteristicas: [
           '04 portas',
@@ -134,6 +138,9 @@ class Carros extends Component {
               <p>{ carro.grupoDescricao }</p>
               <Carousel
                 key={ index }
+                autoPlay={ true }
+                interval={ 2000 }
+                infiniteLoop={ true }
                 showThumbs={ false }
                 showStatus={ false }
                 emulateTouch={ true }>

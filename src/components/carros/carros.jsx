@@ -9,6 +9,8 @@ import ImgEtiosHatch1 from '../../images/nossos-carros/etios-hatch-1.png';
 import ImgEtiosHatch2 from '../../images/nossos-carros/etios-hatch-2.png';
 import ImgDuster1 from '../../images/nossos-carros/duster1.png';
 import ImgDuster2 from '../../images/nossos-carros/duster2.png';
+import ImgTCross1 from '../../images/nossos-carros/tcross1.png';
+import ImgTCross2 from '../../images/nossos-carros/tcross2.png';
 import ImgHb201 from '../../images/nossos-carros/hb201.png';
 import ImgHb202 from '../../images/nossos-carros/hb202.png';
 import './carros.scss';
@@ -104,6 +106,8 @@ class Carros extends Component {
         grupoDescricao: 'SUV automático',
         link: 'https://wa.link/yhz63x',
         fotos: [
+          ImgTCross1,
+          ImgTCross2,
           ImgDuster1,
           ImgDuster2
         ],
@@ -124,7 +128,7 @@ class Carros extends Component {
           'Computador de Bordo'
         ]
       },
-      
+
     ]
   }
 

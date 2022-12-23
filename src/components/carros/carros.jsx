@@ -46,6 +46,34 @@ class Carros extends Component {
         ]
       },
       {
+        grupo: 'CE Hatch',
+        grupoDescricao: 'Compacto / Econômico Fast - Motor 1.3',
+        link: 'https://wa.link/isikda',
+        fotos: [
+          ImgEtiosHatch1,
+          ImgEtiosHatch2
+        ],
+        caracteristicas: [
+          '04 portas',
+          'Freios ABS',
+          'Porta Malas - 270 Litros',
+          'Air Bag Duplo',
+          'Vidros Elétricos',
+          'Travas Elétricas',
+          'Sistema de Som ',
+          'Câmera e Sensor de Ré',
+          'Faróis de neblina',
+          'Direção Elétrica',
+          'Volante com Regulagem de Altura',
+          'Ar Condicionado',
+          '05 Ocupantes',
+          'Motor 1.3',
+          'Cambio 6 Marchas - Mecânico',
+          'Computador de Bordo',
+          'Banco de Couro ou Tecido'
+        ]
+      },
+      {
         grupo: 'FS',
         grupoDescricao: 'Intermediário Sedan',
         link: 'https://wa.link/6g1hyd',
@@ -82,48 +110,21 @@ class Carros extends Component {
         caracteristicas: [
           '04 portas',
           'Freios ABS ',
-          'Porta Malas -  475 Litros',
+          'Porta Malas - 425 Litros',
           'Air Bag Duplo',
           'Vidros Elétricos',
           'Travas Elétricas',
           'Central Multimidia',
-          'Direção Hidráulica',
+          'Direção Elétrica ',
           'Volante com Regulagem de Altura',
           'Ar Condicionado',
           '05 Ocupantes',
-          'Motor 1.5 ',
+          'Motor 1.0 Turbo',
           'Cambio Automático',
           'Computador de Bordo'
         ]
       },
-      {
-        grupo: 'CE Hatch',
-        grupoDescricao: 'Compacto / Econômico Fast - Motor 1.3',
-        link: 'https://wa.link/isikda',
-        fotos: [
-          ImgEtiosHatch1,
-          ImgEtiosHatch2
-        ],
-        caracteristicas: [
-          '04 portas',
-          'Freios ABS',
-          'Porta Malas - 270 Litros',
-          'Air Bag Duplo',
-          'Vidros Elétricos',
-          'Travas Elétricas',
-          'Sistema de Som ',
-          'Câmera e Sensor de Ré',
-          'Faróis de neblina',
-          'Direção Elétrica',
-          'Volante com Regulagem de Altura',
-          'Ar Condicionado',
-          '05 Ocupantes',
-          'Motor 1.3',
-          'Cambio 6 Marchas - Mecânico',
-          'Computador de Bordo',
-          'Banco de Couro ou Tecido'
-        ]
-      }
+      
     ]
   }
 

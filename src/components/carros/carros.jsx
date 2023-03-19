@@ -13,6 +13,8 @@ import ImgTCross1 from '../../images/nossos-carros/tcross1.png';
 import ImgTCross2 from '../../images/nossos-carros/tcross2.png';
 import ImgHb201 from '../../images/nossos-carros/hb201.png';
 import ImgHb202 from '../../images/nossos-carros/hb202.png';
+import ImgGol1 from '../../images/nossos-carros/gol1.png';
+import ImgGol2 from '../../images/nossos-carros/gol2.png';
 import './carros.scss';
 
 class Carros extends Component {
@@ -29,7 +31,9 @@ class Carros extends Component {
           ImgKa1,
           ImgKa2,
           ImgHb201,
-          ImgHb202
+          ImgHb202,
+          ImgGol1,
+          ImgGol2
         ],
         caracteristicas: [
           '04 portas',

@@ -17,7 +17,7 @@ class Duvidas extends Component {
             '• O locatário/condutor deverá possuir idade mínima de 21 anos.',
             '• O locatário deverá apresentar seu documento de habilitação original, emitido há mais de 2 anos (CNH Definitiva), válido e dentro do prazo de vencimento.',
             '• Estrangeiros deverão apresentar passaporte, habilitação válida e visto de permanência.',
-            '• O locatário deverá apresentar cartão de crédito válido, dentro do prazo de vencimento, com limite de crédito disponível para pre-autorização. No caso de o locatário não possuir limite no cartão, poderá ser utilizado a modalidade de caução com PIX, porém, é cobrada uma taxa proporcional ao valor caucionado.',
+            '• O locatário deverá apresentar cartão de crédito válido, dentro do prazo de vencimento, com limite de crédito disponível para pre-autorização.',
             '• Não serão aceitos pagamentos em dinheiro.'
           ]
         },

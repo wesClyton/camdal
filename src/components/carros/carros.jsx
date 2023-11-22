@@ -15,6 +15,10 @@ import ImgHb201 from '../../images/nossos-carros/hb201.png';
 import ImgHb202 from '../../images/nossos-carros/hb202.png';
 import ImgGol1 from '../../images/nossos-carros/gol1.png';
 import ImgGol2 from '../../images/nossos-carros/gol2.png';
+import ImgVoyage1 from '../../images/nossos-carros/voyage1.jpg';
+import ImgVoyage2 from '../../images/nossos-carros/voyage2.jpg';
+import ImgYaris1 from '../../images/nossos-carros/yaris1.png';
+import ImgYaris2 from '../../images/nossos-carros/yaris2.png';
 import './carros.scss';
 
 class Carros extends Component {
@@ -30,8 +34,6 @@ class Carros extends Component {
         fotos: [
           ImgKa1,
           ImgKa2,
-          ImgHb201,
-          ImgHb202,
           ImgGol1,
           ImgGol2
         ],
@@ -57,7 +59,9 @@ class Carros extends Component {
         link: 'https://wa.link/isikda',
         fotos: [
           ImgEtiosHatch1,
-          ImgEtiosHatch2
+          ImgEtiosHatch2,
+          ImgHb201,
+          ImgHb202
         ],
         caracteristicas: [
           '04 portas',
@@ -103,6 +107,33 @@ class Carros extends Component {
           'Cambio 6 Marchas - Mecânico',
           'Computador de Bordo',
           'Banco de Couro ou Tecido'
+        ]
+      },
+      {
+        grupo: 'FX',
+        grupoDescricao: 'Intermediário Sedan Automático',
+        link: 'https://wa.link/cb00pr',
+        fotos: [
+          ImgYaris1,
+          ImgYaris2,
+          ImgVoyage1,
+          ImgVoyage2
+        ],
+        caracteristicas: [
+          '04 portas',
+          'Freios ABS ',
+          'Porta Malas -  562 Litros ',
+          'Air Bag Duplo',
+          'Vidros Elétricos',
+          'Travas Elétricas',
+          'Sistema de Som',
+          'Direção Elétrica',
+          'Volante com Regulagem de Altura',
+          'Ar Condicionado',
+          '05 Ocupantes',
+          'Motor 1.6',
+          'Cambio Automático',
+          'Computador de Bordo'
         ]
       },
       {

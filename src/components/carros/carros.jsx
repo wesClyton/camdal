@@ -89,7 +89,9 @@ class Carros extends Component {
         link: 'https://wa.link/6g1hyd',
         fotos: [
           ImgEtios1,
-          ImgEtios2
+          ImgEtios2,
+          ImgVoyage1,
+          ImgVoyage2
         ],
         caracteristicas: [
           '04 portas',

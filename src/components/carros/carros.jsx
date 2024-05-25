@@ -19,6 +19,8 @@ import ImgVoyage1 from '../../images/nossos-carros/voyage1.jpg';
 import ImgVoyage2 from '../../images/nossos-carros/voyage2.jpg';
 import ImgYaris1 from '../../images/nossos-carros/yaris1.png';
 import ImgYaris2 from '../../images/nossos-carros/yaris2.png';
+import ImgYarisHatch1 from '../../images/nossos-carros/yarisHatch1.png';
+import ImgYarisHatch2 from '../../images/nossos-carros/yarisHatch2.png';
 import './carros.scss';
 
 class Carros extends Component {
@@ -107,6 +109,34 @@ class Carros extends Component {
           '05 Ocupantes',
           'Motor 1.5',
           'Cambio 6 Marchas - Mecânico',
+          'Computador de Bordo',
+          'Banco de Couro ou Tecido'
+        ]
+      },
+      {
+        grupo: 'FH',
+        grupoDescricao: 'Intermediário Hatch Automático',
+        link: 'https://wa.link/phua81',
+        fotos: [
+          ImgYarisHatch1,
+          ImgYarisHatch2,
+        ],
+        caracteristicas: [
+          '04 portas',
+          'Freios ABS ',
+          'Porta Malas -  310 Litros ',
+          'Air Bag Duplo',
+          'Vidros Elétricos',
+          'Travas Elétricas',
+          'Sistema de Som',
+          'Câmera e Sensor de Ré',
+          'Iluminação DRL',
+          'Direção Hidraulica',
+          'Volante com Regulagem de Altura',
+          'Ar Condicionado',
+          '05 Ocupantes',
+          'Motor 1.3 e 1.5',
+          'Cambio Automático',
           'Computador de Bordo',
           'Banco de Couro ou Tecido'
         ]

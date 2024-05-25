@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://camdal.com.br/',
-    title: 'Camdal',
+    title: 'Camdal Locadora de Veiculos',
   },
   plugins: [
     'gatsby-plugin-sass',

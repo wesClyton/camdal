@@ -34,6 +34,9 @@
         &.telefone {
           background-image: url(../images/contato/phone.png);
         }
+        &.mail {
+          background-image: url(../images/contato/mail.png);
+        }
         &.whats {
           background-image: url(../images/contato/whats.png);
         }
@@ -52,13 +55,10 @@
       }
     }
 
-    .mapa {
-
-      iframe {
-        border: 2px solid var(--white);
-        width: 100%;
-        height: 300px;
-      }
+    .card {
+      background-color: #fff;
+      padding: 1.275em;
+      border-radius: 5px;
     }
   }
 }

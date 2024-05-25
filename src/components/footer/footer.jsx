@@ -37,7 +37,7 @@ class Footer extends Component {
               <a className="link facebook" href="https://www.facebook.com/camdallocadora" target="_blank" rel="noreferrer"></a>
             </li>
             <li>
-              <a className="link instagram" href="#" title="Em breve" target="_blank" rel="noreferrer"></a>
+              <a className="link instagram" href="https://www.instagram.com/camdallocadora" target="_blank" rel="noreferrer"></a>
             </li>
             <li>
               <a className="link linkedin" href="#" title="Em breve" target="_blank" rel="noreferrer"></a>
@@ -45,6 +45,7 @@ class Footer extends Component {
           </ul>
 
           <address className="address color-text-white mt-2">Avenida Goias, 1178, Zona 5 | 87209-006 | Cianorte-PR</address>
+          <address className="address color-text-white mt-1 mb-1">Avenida Distrito Federal, 1580, Jardim Progresso | 87701-310 | Paranaví-PR</address>
           <small className="copy">
             <span className="text">©2021 - Todos os direitos reservados à Camdal - Aluguel de carros</span>
             <span className="pipe">|</span>

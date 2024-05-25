@@ -24,7 +24,7 @@ class Header extends Component {
     return (
       <>
         <title>
-          { this.props.title ? this.props.title + ' | ' : '' }Camdal
+          { this.props.title ? this.props.title + ' | ' : '' }Camdal Locadora de Veículos
         </title>
 
         <header className="header">
@@ -55,10 +55,10 @@ class Header extends Component {
 
               <div className={ `socialmedia ${this.state.menuAtivo ? '-active' : ''}` }>
                 <ul className="list">
-                  <li className="listitem">
+                  {/* <li className="listitem">
                     <i className="icon phone"></i>
                     <a className="text" href="tel:+5544991038369">(44) 99103 8369</a>
-                  </li>
+                  </li> */}
                   <li className="listitem">
                     <i className="icon whats"></i>
                     <a className="text" href="https://wa.me/554430394721">(44) 3039 4721</a>

@@ -44,8 +44,8 @@ class Footer extends Component {
             </li>
           </ul>
 
-          <address className="address color-text-white mt-2">Avenida Goias, 1178, Zona 5 | 87209-006 | Cianorte-PR</address>
-          <address className="address color-text-white mt-1 mb-1">Avenida Distrito Federal, 1580, Jardim Progresso | 87701-310 | Paranaví-PR</address>
+          <address className="address color-text-white mt-2">Avenida Goias, 1178, Zona 5 | 87209-006 | Cianorte-PR | 44 3039 4721 - 44 99103 8369</address>
+          <address className="address color-text-white mt-1 mb-1">Avenida Distrito Federal, 1580, Jardim Progresso | 87701-310 | Paranaví-PR | 44 3900 2425 - 44 99921 5276</address>
           <small className="copy">
             <span className="text">©2021 - Todos os direitos reservados à Camdal - Aluguel de carros</span>
             <span className="pipe">|</span>

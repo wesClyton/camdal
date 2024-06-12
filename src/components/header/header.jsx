@@ -61,7 +61,7 @@ class Header extends Component {
                   </li> */}
                   <li className="listitem">
                     <i className="icon whats"></i>
-                    <a className="text" href="https://wa.me/554430394721">(44) 3039 4721</a>
+                    <a className="text" href="https://wa.me/554430394721">WhatsApp</a>
                   </li>
                   <li className="listitem">
                     <i className="icon mail"></i>

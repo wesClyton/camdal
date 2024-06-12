@@ -39,7 +39,7 @@ const ContatoPage = () => {
               <h5>Email</h5>
               <div className="iconetexto">
                 <i className="icon mail"></i>
-                <a href="mailto:contato@camdal.com.br">contato@camdal.com.br</a>
+                <a href="mailto:reserva@camdal.com.br">reserva@camdal.com.br</a>
               </div>
             </div>
 
@@ -56,8 +56,8 @@ const ContatoPage = () => {
                     <a target="_blank" href="tel:+5544991038369">(44) 99103 8369</a>
                   </div>
                   <div className="iconetexto">
-                    <i className="icon whats"></i>
-                    <a target="_blank" href="https://wa.me/554430394721">(44) 3039 4721</a>
+                    <i className="icon telefone"></i>
+                    <a target="_blank" href="tel:+554430394721">(44) 3039 4721</a>
                   </div>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const ContatoPage = () => {
                 <h5>Paranavaí</h5>
                 <div className="iconetexto">
                   <i className="icon endereco"></i>
-                  <a target="_blank" href="https://maps.app.goo.gl/ocCmXdzJqoidwxzp7">Avenida Goias, 1178, Zona 5 - CEP: 87209-006</a>
+                  <a target="_blank" href="https://maps.app.goo.gl/ocCmXdzJqoidwxzp7">Avenida Distrito Federal, Jardim Progresso - 1580 - CEP: 87209-006</a>
                 </div>
                 <div className='flex mt-1'>
                   <div className="iconetexto">
@@ -74,8 +74,8 @@ const ContatoPage = () => {
                     <a target="_blank" href="tel:+5544999215276">(44) 99921 5276</a>
                   </div>
                   <div className="iconetexto">
-                    <i className="icon whats"></i>
-                    <a target="_blank" href="https://wa.me/554430394721">(44) 3039 4721</a>
+                    <i className="icon telefone"></i>
+                    <a target="_blank" href="tel:+554439002425">(44) 3900-2425</a>
                   </div>
                 </div>
               </div>

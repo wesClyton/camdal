@@ -65,7 +65,7 @@ class Header extends Component {
                   </li>
                   <li className="listitem">
                     <i className="icon mail"></i>
-                    <a className="text" href="mailto:contato@camdal.com.br">contato@camdal.com.br</a>
+                    <a className="text" href="mailto:reserva@camdal.com.br">reserva@camdal.com.br</a>
                   </li>
                 </ul>
               </div>

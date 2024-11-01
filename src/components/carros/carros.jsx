@@ -21,6 +21,10 @@ import ImgYaris1 from '../../images/nossos-carros/yaris1.png';
 import ImgYaris2 from '../../images/nossos-carros/yaris2.png';
 import ImgYarisHatch1 from '../../images/nossos-carros/yarisHatch1.png';
 import ImgYarisHatch2 from '../../images/nossos-carros/yarisHatch2.png';
+import OnixCs1 from '../../images/nossos-carros/onixcs1.jpg';
+import OnixCs2 from '../../images/nossos-carros/onixcs2.jpg';
+import Hb20Cs1 from '../../images/nossos-carros/hb20cs1.jpg';
+import Hb20Cs2 from '../../images/nossos-carros/hb20cs2.jpg';
 import './carros.scss';
 
 class Carros extends Component {
@@ -111,6 +115,33 @@ class Carros extends Component {
           'Cambio 6 Marchas - Mecânico',
           'Computador de Bordo',
           'Banco de Couro ou Tecido'
+        ]
+      },
+      {
+        grupo: 'CS',
+        grupoDescricao: 'Intermediário Sedan',
+        link: 'https://wa.link/6g1hyd',
+        fotos: [
+          OnixCs1,
+          OnixCs2,
+          Hb20Cs1,
+          Hb20Cs2
+        ],
+        caracteristicas: [
+          '04 portas',
+          'Freios ABS',
+          'Porta Malas - 275 Litros',
+          '06 Air Bags ',
+          '04 Vidros Elétricos',
+          'Travas Elétricas',
+          'Kit Multimidia com espelhamento de Sistema Androide ou IOS',
+          'Faróis com Acendimento Automático',
+          'Direção Elétrica',
+          'Ar Condicionado',
+          '05 Ocupantes',
+          'Cambio  - Mecânico',
+          'Computador de Bordo',
+          'Banco em Tecido',
         ]
       },
       {

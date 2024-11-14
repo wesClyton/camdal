@@ -66,7 +66,7 @@ const ContatoPage = () => {
                 <h5>Paranavaí</h5>
                 <div className="iconetexto">
                   <i className="icon endereco"></i>
-                  <a target="_blank" href="https://maps.app.goo.gl/ocCmXdzJqoidwxzp7">Avenida Distrito Federal, Jardim Progresso - 1580 - CEP: 87209-006</a>
+                  <a target="_blank" href="https://maps.app.goo.gl/ocCmXdzJqoidwxzp7">Avenida Distrito Federal, Jardim Progresso - 1580 - CEP: 87701-310</a>
                 </div>
                 <div className='flex mt-1'>
                   <div className="iconetexto">

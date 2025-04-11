@@ -1,0 +1,27 @@
+---
+interface Props {
+  links: Link[];
+}
+
+interface Link {
+  name: string;
+  href: string;
+}
+
+const { links } = Astro.props;
+const currentPath = Astro.url.pathname.replace(/^\//, "");
+
+---
+
+<ul class="flex flex-col text-sm font-medium p-4 md:p-0 mt-4 rounded-lg bg-c-blue md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+  {
+    links.map((i) => {
+      const url = i.href.replace(/^\//, "");
+      return(
+      <li>
+        <a href={i.href} class={"block py-2 px-3 md:p-0 md:hover:text-c-orange rounded-sm hover:bg-c-orange md:hover:bg-transparent md:bg-transparent" + (currentPath === url ? " bg-c-orange md:text-c-orange text-white font-bold" : " md:text-c-black text-white")}>{i.name}</a>
+      </li>
+    )})
+  }
+
+</ul>

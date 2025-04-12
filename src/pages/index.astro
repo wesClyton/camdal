@@ -1,4 +1,6 @@
 ---
+import BannerReserva from "../components/BannerReserva.astro";
+import ContainerPage from "../components/ContainerPage.astro";
 import Header from "../components/Header.astro";
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
@@ -6,5 +8,7 @@ import "../styles/global.css";
 
 <Layout title="Home" description="Home">
   <Header />
-	<div class="h-100 bg-amber-200 pt-20 container">qqqq</div>
+	<ContainerPage>
+    <BannerReserva/>
+  </ContainerPage>
 </Layout>

@@ -5,6 +5,7 @@ import CarrouselCarros from "../components/CarrouselCarros";
 import ComoFunciona from "../components/ComoFunciona.astro";
 import ContainerPage from "../components/ContainerPage.astro";
 import Header from "../components/Header.astro";
+import Localizacao from "../components/Localizacao.astro";
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
 ---
@@ -16,5 +17,6 @@ import "../styles/global.css";
     <div class="xl:mt-20 2xl:mt-36"><ComoFunciona  /></div>
     <div class="mt-28"><CarrouselCarros client:only="react" /></div>
     <div><AtendimentoHumanizado /></div>
+    <div class="mt-14"><Localizacao /></div>
   </ContainerPage>
 </Layout>

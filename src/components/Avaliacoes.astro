@@ -1,0 +1,40 @@
+---
+import CardAvaliacao from "./CardAvaliacao.astro"
+import D from "./D.astro"
+
+
+const avaliacoes = [
+  {
+    name: "Sidney Aurelio",
+    description: "Desde o primeiro contato pelo WhatsApp fui bem atendido. Processo desburocratizado, tanto no momento da busca como da devolução do veículo que me foi entregue limpo e higienizado. Recomendo a locação na Camdal.",
+    stars: 5
+  },
+  {
+    name: "Edson Câmara",
+    description: "A Andressa moça que nos atendeu extremamente educada e prestativa. Seu atendimento superou as expectativas. Explicou tudo sobre o carro e nos deixou seguro sobre o veículo. Era para deixarmos o carro no domingo na própria agência, porém nos ofereceram para devolver o carro na rodoviária com apenas um pequeno valor a mais. Eu super indico a locadora e quando eu voltar a cianorte farei novamente locação de veículo com eles. Obrigado Wanessa pelo profissionalismo vcs estão de parabéns! Nota 1000 !",
+    stars: 5
+  },
+  {
+    name: "kairos",
+    description: "Ótimo atendimento desde o primeiro contato via WhatsApp até o momento em que fui fechar negócio, e o veículo automático foi incrível. Fomos para Cataratas do Iguaçu com muito conforto.",
+    stars: 5
+  }
+]
+
+---
+
+<section class="max-w-7xl mx-auto text-center">
+    <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-16">
+      Veja o que estão falando <D block>sobre nós</D></span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+      <CardAvaliacao avaliacoes={avaliacoes} />
+    </div>
+
+    <div class="w-72 mx-auto">
+      <a class="flex justify-items-center justify-center border border-gray-400 text-gray-900 px-6 py-2 rounded-md hover:bg-gray-100 transition" href="https://www.google.com/search?q=Camdal&rlz=1C1FKPE_enBR1114BR1114&oq=Camdal&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGDwyBggDECMYJzINCAQQLhivARjHARiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDE0MjdqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8#lrd=0x94ed5bbca9a05725:0x1e1ed43ed7bd31a9,1,,,," target="_blank">
+        Ver todas as avaliações <span class="material-symbols-outlined text-sm ml-5">star_shine</span>
+      </a>
+    </div>
+  </section>

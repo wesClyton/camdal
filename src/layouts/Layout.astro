@@ -27,9 +27,10 @@ const { title, description } = Astro.props;
     <ViewTransitions />
 	</head>
 	<body class="bg-c-bg">
-		<div class="flex justify-center"><slot /></div>
+		<div class="flex justify-center items-center flex-col"><slot /></div>
 	</body>
 
   <script src="../scripts/handleMenu.ts"></script>
+  <script src="../scripts/handleScroll.ts"></script>
 </html>
 

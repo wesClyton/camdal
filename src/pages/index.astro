@@ -1,4 +1,5 @@
 ---
+import AtendimentoHumanizado from "../components/AtendimentoHumanizado.astro";
 import BannerReserva from "../components/BannerReserva.astro";
 import CarrouselCarros from "../components/CarrouselCarros";
 import ComoFunciona from "../components/ComoFunciona.astro";
@@ -14,5 +15,6 @@ import "../styles/global.css";
     <BannerReserva/>
     <div class="xl:mt-20 2xl:mt-36"><ComoFunciona  /></div>
     <div class="mt-28"><CarrouselCarros client:only="react" /></div>
+    <div><AtendimentoHumanizado /></div>
   </ContainerPage>
 </Layout>

@@ -1,0 +1,19 @@
+---
+interface Props {
+  vantagem: {
+    icon: string;
+    title: string;
+    description: string;
+  },
+}
+
+const { vantagem } = Astro.props;
+---
+
+<div >
+  <div class="flex gap-3 items-center">
+    <span class="material-symbols-outlined bg-c-blue text-c-white !text-4xl rounded-lg p-3">{vantagem.icon}</span>
+    <h3 class="font-bold text-xl/6 text-c-gray">{vantagem.title}</h3>
+  </div>
+  <p class="text-xs mt-4">{vantagem.description}</p>
+</div>

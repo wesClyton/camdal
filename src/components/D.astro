@@ -1,3 +1,11 @@
-<spam class="text-c-orange">
+---
+interface Props {
+  block?: boolean;
+}
+
+const { block } = Astro.props;
+---
+
+<spam class=`text-c-orange ${block ? "block" : ""}`>
   <slot />
 </spam>

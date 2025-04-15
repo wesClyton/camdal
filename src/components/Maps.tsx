@@ -1,4 +1,9 @@
-import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
+import {
+  AdvancedMarker,
+  APIProvider,
+  Map,
+  Marker,
+} from "@vis.gl/react-google-maps";
 import pin from "../assets/pin.png";
 import { useState } from "react";
 
@@ -53,6 +58,7 @@ export function Maps({ showInfo }: { showInfo?: boolean }) {
 
       <APIProvider apiKey="AIzaSyA_rJsdmEfsR1_-xKuC5tGyCd_AXGi2LTk">
         <Map
+          mapId={"bf51a910020fa25a"}
           style={{ width: "100%", height: "17.5rem", maxWidth: "100%" }}
           defaultCenter={{
             lat: locations[locale].lat,
@@ -66,18 +72,17 @@ export function Maps({ showInfo }: { showInfo?: boolean }) {
           gestureHandling={"greedy"}
           disableDefaultUI={true}
         >
-          <Marker
+          <AdvancedMarker
             position={{
               lat: locations[locale].lat,
               lng: locations[locale].lng,
             }}
-            icon={{
-              url: pin.src,
-            }}
             onClick={() => {
               window.open(locations[locale].link, "_blank");
             }}
-          />
+          >
+            <img src={pin.src} alt="pin" />
+          </AdvancedMarker>
         </Map>
       </APIProvider>
 

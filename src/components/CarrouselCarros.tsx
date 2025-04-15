@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { carData } from "../mocks/cars";
 import logoVertical from "../assets/logo-vertical.png";
@@ -10,6 +10,13 @@ export default function CarCarousel() {
   const nextSlide = () => {
     setIndex((prev) => (prev + 1) % carData.length);
   };
+
+  useEffect(() => {
+    let timer1 = setInterval(() => nextSlide(), 3 * 1000);
+    return () => {
+      clearTimeout(timer1);
+    };
+  }, []);
 
   return (
     <section>

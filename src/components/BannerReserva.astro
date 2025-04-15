@@ -5,14 +5,14 @@ import D from "./D.astro";
 import { FormBanner } from "./FormBanner";
 ---
 
-<div>
+<section>
   <div class="flex flex-col gap-4 absolute">
     <RotateLogoBanner config="--slideToShow:2; --slideNum:1; --direction:normal" />
     <RotateLogoBanner config="--slideToShow:2; --slideNum:1; --direction:reverse" />
     <RotateLogoBanner config="--slideToShow:2; --slideNum:1; --direction:normal" />
     <RotateLogoBanner config="--slideToShow:2; --slideNum:1; --direction:reverse" />
   </div>
-  <div class="flex relative z-10 pt-20 items-center h-[520px]">
+  <div class="flex relative z-10 pt-20 items-center h-[520px] xl:h-[600px]">
     <div class="w-[550px] flex flex-col pl-8">
       <h1>A mobilidade e o <D>cuidado</D> que <D>você</D> precisa</h1>
       <p class="text-lg pt-3">com veículos novos e os melhores preços. <br> Conte com a gente!</p>
@@ -20,9 +20,7 @@ import { FormBanner } from "./FormBanner";
     </div>
     <div>
       <img src={carBanner.src} alt="Car Banner" />
-      <div class="bg-c-orange absolute w-[600px] h-[520px] top-0 -z-10 right-0"></div>
+      <div class="bg-c-orange absolute w-[600px] h-[520px] xl:h-[600px] top-0 -z-10 right-0"></div>
     </div>
   </div>
-</div>
-
-
+</section>

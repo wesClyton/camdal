@@ -1,5 +1,7 @@
 ---
 import BannerReserva from "../components/BannerReserva.astro";
+import CarrouselCarros from "../components/CarrouselCarros";
+import ComoFunciona from "../components/ComoFunciona.astro";
 import ContainerPage from "../components/ContainerPage.astro";
 import Header from "../components/Header.astro";
 import Layout from '../layouts/Layout.astro';
@@ -10,5 +12,7 @@ import "../styles/global.css";
   <Header />
 	<ContainerPage>
     <BannerReserva/>
+    <div class="xl:mt-20 2xl:mt-36"><ComoFunciona  /></div>
+    <div class="mt-28"><CarrouselCarros client:only="react" /></div>
   </ContainerPage>
 </Layout>

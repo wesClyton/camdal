@@ -6,6 +6,7 @@ interface Props {
 const { block } = Astro.props;
 ---
 
-<spam class=`text-c-orange ${block ? "block" : ""}`>
+<span class=`text-c-orange ${block ? "block" : ""}`>
   <slot />
-</spam>
+</span>
+

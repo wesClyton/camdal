@@ -11,12 +11,12 @@ export default function CarCarousel() {
     setIndex((prev) => (prev + 1) % carData.length);
   };
 
-  // useEffect(() => {
-  //   let timer1 = setInterval(() => nextSlide(), 3 * 1000);
-  //   return () => {
-  //     clearTimeout(timer1);
-  //   };
-  // }, []);
+  useEffect(() => {
+    let timer1 = setInterval(() => nextSlide(), 3 * 1000);
+    return () => {
+      clearTimeout(timer1);
+    };
+  }, []);
 
   return (
     <section>
@@ -51,7 +51,7 @@ export default function CarCarousel() {
           <AnimatePresence mode="wait">
             <motion.img
               key={car.title}
-              src={car.image}
+              src={car.images[0]}
               alt={car.title}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}

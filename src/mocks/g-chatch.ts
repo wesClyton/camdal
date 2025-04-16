@@ -4,7 +4,7 @@ export const gchatch = {
   id: 0,
   title: "Grupo C Hatch",
   subtitle: "Compacto / Econômico com 05 lugares",
-  image: gchatchImg.src,
+  images: [gchatchImg.src],
   features: [
     {
       label: "Portas",

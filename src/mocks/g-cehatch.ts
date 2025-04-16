@@ -4,7 +4,7 @@ export const gcehatch = {
   id: 1,
   title: "Grupo CE Hatch",
   subtitle: "Compacto / Econômico com 05 lugares",
-  image: gcehatchImg.src,
+  images: [gcehatchImg.src],
   features: [
     {
       label: "Portas",

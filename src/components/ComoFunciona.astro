@@ -15,39 +15,39 @@ import arrow from "../assets/arrow-curved.png"
       oferecer a melhor experiência, garantindo confiança e praticidade.
     </p>
 
-    <div class="flex flex-col md:flex-row justify-center items-center mb-12">
+    <div class="flex justify-center items-center mb-12">
       <!-- Etapa 1 -->
       <div class="flex flex-col items-center">
-        <div class="bg-c-blue text-white p-5 rounded-xl mb-4">
-          <span class="material-symbols-outlined !text-5xl">add_location</span>
+        <div class="bg-c-blue text-white p-4 sm:p-5 rounded-xl mb-4">
+          <span class="material-symbols-outlined sm:!text-5xl">add_location</span>
         </div>
-        <span class="font-semibold text-lg text-c-gray">Escolha o local</span>
+        <span class="font-semibold text-xs sm:text-lg text-c-gray">Escolha o local</span>
       </div>
 
       <!-- Seta -->
-      <div class="hidden md:block">
-        <img src={arrow.src} class="w-20" />
+      <div>
+        <img src={arrow.src} class="w-14 sm:w-20 -mt-7 sm:mt-0" />
       </div>
 
       <!-- Etapa 2 -->
       <div class="flex flex-col items-center">
-        <div class="bg-orange-500 text-white p-5 rounded-lg mb-4">
-          <span class="material-symbols-outlined !text-5xl">event_available</span>
+        <div class="bg-orange-500 text-white p-4 sm:p-5 rounded-lg mb-4">
+          <span class="material-symbols-outlined sm:!text-5xl">event_available</span>
         </div>
-        <span class="font-semibold text-lg text-c-gray">Data de retirada</span>
+        <span class="font-semibold text-xs sm:text-lg text-c-gray">Data de retirada</span>
       </div>
 
       <!-- Seta -->
-      <div class="hidden md:block">
-        <img src={arrow.src} class="w-20 rotate-180 transform -scale-x-100 -mt-7" />
+      <div>
+        <img src={arrow.src} class="w-14 sm:w-20 rotate-180 transform -scale-x-100 -mt-9 sm:-mt-7" />
       </div>
 
       <!-- Etapa 3 -->
       <div class="flex flex-col items-center">
-        <div class="bg-blue-900 text-white p-5 rounded-lg mb-4">
-          <span class="material-symbols-outlined !text-5xl">car_rental</span>
+        <div class="bg-blue-900 text-white p-4 sm:p-5 rounded-lg mb-4">
+          <span class="material-symbols-outlined sm:!text-5xl">car_rental</span>
         </div>
-        <span class="font-semibold text-lg text-c-gray">Reserve seu carro</span>
+        <span class="font-semibold text-xs sm:text-lg text-c-gray">Reserve seu carro</span>
       </div>
     </div>
 

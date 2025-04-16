@@ -12,7 +12,7 @@ export function InputIcon({
   ...props
 }: InputIconProps) {
   return (
-    <div className="w-2/3 flex justify-start items-center relative">
+    <div className="sm:w-2/3 flex justify-start items-center relative">
       <span className="material-symbols-outlined absolute w-10 pl-3.5 z-20">
         {icon}
       </span>

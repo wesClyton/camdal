@@ -11,16 +11,16 @@ export default function CarCarousel() {
     setIndex((prev) => (prev + 1) % carData.length);
   };
 
-  useEffect(() => {
-    let timer1 = setInterval(() => nextSlide(), 3 * 1000);
-    return () => {
-      clearTimeout(timer1);
-    };
-  }, []);
+  // useEffect(() => {
+  //   let timer1 = setInterval(() => nextSlide(), 3 * 1000);
+  //   return () => {
+  //     clearTimeout(timer1);
+  //   };
+  // }, []);
 
   return (
     <section>
-      <h2 className="w-96 m-auto text-2xl font-bold text-center mb-5">
+      <h2 className="max-w-96 m-auto text-2xl font-bold text-center mb-5">
         Conheça nossos carros mais alugados
       </h2>
       <ul className="flex justify-center items-center mt-4">
@@ -40,13 +40,14 @@ export default function CarCarousel() {
           </li>
         ))}
       </ul>
-      <div className="relative w-full max-w-6xl mx-auto p-4 grid grid-cols-1 md:grid-cols-12 gap-6 items-center mt-12">
+
+      <div className="relative w-full max-w-6xl mx-auto p-4 md:grid md:grid-cols-12 gap-6 items-center mt-12">
         <img
           src={logoVertical.src}
           alt="Logo"
-          className="absolute left-0 z-10"
+          className="absolute left-0 z-10 hidden md:block"
         />
-        <div className="relative h-72 z-20 col-span-7 -right-20">
+        <div className="relative md:static lg:relative h-52 lg:h-72 z-20 md:col-span-6 lg:col-span-7 md:-right-20">
           <AnimatePresence mode="wait">
             <motion.img
               key={car.title}
@@ -56,12 +57,12 @@ export default function CarCarousel() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.6 }}
-              className="absolute inset-0 w-full object-contain"
+              className="absolute inset-0 h-full md:h-72 lg:h-auto w-auto xl:object-contain left-[50%] translate-x-[-50%] md:top-36 lg:top-0 md:left-0 md:translate-x-0 lg:left-auto lg:max-w-fit"
             />
           </AnimatePresence>
         </div>
 
-        <div className="space-y-4 bg-c-white p-16 col-span-5">
+        <div className="space-y-4 bg-c-white p-4 md:p-8 lg:p-16 md:col-span-6 lg:col-span-5 w-full">
           <AnimatePresence mode="wait">
             <motion.div
               key={car.title}
@@ -72,7 +73,7 @@ export default function CarCarousel() {
             >
               <h2 className="text-2xl font-bold">{car.title}</h2>
               <p className="font-light mb-5">{car.subtitle}</p>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 text-sm md:text-base ">
+              <ul className="grid grid-cols-2 gap-y-4 gap-x-8 text-sm md:text-base ">
                 {car.features.map((f, i) => (
                   <li key={i} className="flex-1/2 text-xs">
                     {f.label}

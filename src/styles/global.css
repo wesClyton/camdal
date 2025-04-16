@@ -38,3 +38,7 @@
     font-size: var(--text-lg);
   }
 }
+
+.react-datepicker-wrapper {
+  width: 100%;
+}

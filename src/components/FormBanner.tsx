@@ -25,9 +25,28 @@ export function FormBanner() {
   const [startDate, setStartDate] = useState(null);
 
   return (
-    <div className="form pt-11">
+    <div
+      className="
+        w-full
+        pt-11
+        sm:px-4
+        md:px-0
+        form
+        sm:absolute sm:-bottom-44 sm:left-[50%] sm:translate-x-[-50%]
+        lg:w-auto
+        xl:relative xl:bottom-0
+      "
+    >
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex gap-4">
+        <div
+          className="
+            w-full
+            flex
+            flex-col
+            sm:flex-row
+            gap-4
+          "
+        >
           <InputIcon
             icon="add_location"
             type="text"
@@ -45,20 +64,34 @@ export function FormBanner() {
                   dateFormat="Pp"
                   locale="pt-BR"
                   placeholderText="Data de devolução"
-                  className="bg-c-white rounded-lg p-4 w-full pl-12"
                   timeCaption="Horario"
                   onChange={(date) => {
                     console.log(`aaa`, date);
                     field.onChange(date);
                   }}
                   selected={field.value}
+                  className="
+                    w-full
+                    p-4 pl-12
+                    bg-c-white
+                    rounded-lg
+                  "
                 />
               </InputIcon>
             )}
           />
         </div>
 
-        <div className="flex gap-4 pt-4">
+        <div
+          className="
+            w-full
+            flex
+            flex-col
+            sm:flex-row
+            pt-4
+            gap-4
+          "
+        >
           <InputIcon
             icon="mode_of_travel"
             type="text"
@@ -76,12 +109,17 @@ export function FormBanner() {
                   dateFormat="Pp"
                   locale="pt-BR"
                   placeholderText="Data de devolução"
-                  className="bg-c-white rounded-lg p-4 w-full pl-12"
                   timeCaption="Horario"
                   onChange={(date) => {
                     field.onChange(date);
                   }}
                   selected={field.value}
+                  className="
+                    w-full
+                    p-4 pl-12
+                    bg-c-white
+                    rounded-lg
+                  "
                 />
               </InputIcon>
             )}
@@ -93,7 +131,15 @@ export function FormBanner() {
         <div>
           <button
             type="submit"
-            className="w-full mt-4 h-14 bg-c-orange rounded-lg flex justify-center items-center hover:cursor-pointer font-bold text-c-white"
+            className="
+              flex
+              w-full h-14
+              mt-4
+              font-bold text-c-white
+              bg-c-orange
+              rounded-lg
+              justify-center items-center hover:cursor-pointer
+            "
           >
             Reservar
           </button>

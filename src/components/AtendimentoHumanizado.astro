@@ -1,0 +1,66 @@
+---
+import imgAtendimentoHumanizado from "../assets/atendimento-humanizado.png";
+import imgVantagens from "../assets/vantagens.png";
+import imgMobileAtendimentoHumanizado from "../assets/atendimento-humanizado-mobile.png";
+import imgMobileVantagens from "../assets/vantagens-mobile.png";
+
+import D from "./D.astro";
+import ItemVantagens from "./ItemVantagens.astro";
+
+const vantagens = [
+  {
+    title: "Caução do veículo",
+    description: "O locatário deverá apresentar cartão de crédito válido, com limite de crédito disponível para pré-autorização.",
+    icon: "credit_card"
+  },
+  {
+    title: "Proteções do veículo",
+    description: "Nosso veículo já sai com proteção total, garantindo a tranquilidade necessária para o período contratado.",
+    icon: "verified_user"
+  },
+  {
+    title: "Veja nossos opcionais",
+    description: "Nossos veículos contam com bluetooth, entrada USB, multimídia e opção para Drive In.",
+    icon: "done_all"
+  },
+  {
+    title: "Conforto garantido",
+    description: "Ar-condicionado, direção elétrica, som, alarme e rastreamento estão disponíveis em todos os veículos.",
+    icon: "bookmarks"
+  }
+]
+
+---
+
+<section class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-8 items-start relative lg:-bottom-36">
+    <div class="max-w-10/12 md:max-w-max lg:w-full mx-auto">
+      <img src={imgVantagens.src} alt="Entrega de chave" class="hidden w-full rounded-md object-cover h-80 lg:h-auto lg:block">
+      <img src={imgMobileVantagens.src} alt="Entrega de chave" class="rounded-md lg:hidden mx-auto">
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 xl:gap-12 pt-12 xl:pt-24 px-7 xl:px-14">
+      {vantagens.map((vantagem) => (
+        <ItemVantagens vantagem={vantagem}  />
+      ))}
+    </div>
+</section>
+
+<section class="max-w-7xl mx-auto mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-8 items-center px-7 lg:px-0">
+  <div class="mt-16 order-2 lg:order-1">
+    <h2 class="text-2xl md:text-4xl font-bold mb-8 text-c-gray">
+      Atendimento 100% <D block>Humanizado</D>
+    </h2>
+    <p class="mb-4 font-light text-sm">
+      Na Camdal, acreditamos que um atendimento 100% humanizado faz toda a diferença! Do primeiro contato até a devolução do veículo, nossa equipe está sempre pronta para ouvir, entender e oferecer a melhor solução para você.
+      Cada cliente é único, e por isso, priorizamos um atendimento próximo, transparente e personalizado.
+    </p>
+    <p class=" font-light text-sm">
+      Seja para esclarecer dúvidas, indicar o carro ideal ou ajustar detalhes do contrato, estamos aqui para garantir a melhor experiência possível.
+    </p>
+  </div>
+
+  <div class="lg:w-full mx-auto order-1 lg:order-2">
+    <img src={imgAtendimentoHumanizado.src} alt="Atendimento humanizado" class="w-full hidden lg:block rounded-md object-cover">
+    <img src={imgMobileAtendimentoHumanizado.src} alt="Entrega de chave" class="rounded-md lg:hidden mx-auto">
+  </div>
+</section>

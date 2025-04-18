@@ -1,17 +1,13 @@
 ---
-import RotateLogoBanner from "./RotateLogoBanner.astro";
+
 import carBanner from "../assets/car-banner.png";
 import D from "./D.astro";
 import { FormBanner } from "./FormBanner";
+import BannerBgAnimated from "./BannerBgAnimated.astro";
 ---
 
 <section class="h-[800px] xl:h-auto">
-  <div class="flex flex-col gap-4 absolute">
-    <RotateLogoBanner config="--slideToShow:2; --slideNum:1; --direction:normal" />
-    <RotateLogoBanner config="--slideToShow:2; --slideNum:1; --direction:reverse" />
-    <RotateLogoBanner config="--slideToShow:2; --slideNum:1; --direction:normal" />
-    <RotateLogoBanner config="--slideToShow:2; --slideNum:1; --direction:reverse" />
-  </div>
+  <BannerBgAnimated />
   <div class="flex flex-col sm:flex-row relative z-10 pt-20 px-10 sm:px-0 items-center h-[520px] sm:h-[460px] xl:h-[600px]">
     <div class="w-full sm:w-[550px] flex flex-col sm:pl-8">
       <h1 class="text-2xl">A mobilidade e o <D>cuidado</D> que <D>você</D> precisa</h1>

@@ -6,6 +6,8 @@ import Header from "../components/Header.astro";
 import Layout from '../layouts/Layout.astro';
 import { NossosCarrosContent } from "../components/NossosCarros";
 import "../styles/global.css";
+import Avaliacoes from "../components/Avaliacoes.astro";
+import RodeComCamdal from "../components/RodeComCamdal.astro";
 ---
 
 <Layout title="Home" description="Home">
@@ -13,6 +15,8 @@ import "../styles/global.css";
 	<ContainerPage>
     <BannerReserva/>
     <div class="xl:mt-20 2xl:mt-36"><NossosCarrosContent client:only="react" /></div>
+    <div class="py-16"><Avaliacoes /></div>
+    <div class="md:py-16 max-w-6xl m-auto"><RodeComCamdal /></div>
   </ContainerPage>
   <Footer />
 </Layout>

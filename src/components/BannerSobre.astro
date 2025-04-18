@@ -1,0 +1,20 @@
+---
+
+import banner from "../assets/banner-sobre.png";
+import D from "./D.astro";
+import BannerBgAnimated from "./BannerBgAnimated.astro";
+---
+
+<section>
+  <BannerBgAnimated />
+  <div class="flex flex-col sm:flex-row relative z-10 pt-20 px-10 sm:px-0 items-center h-[520px] sm:h-[460px] xl:h-[600px]">
+    <div class="w-full sm:w-[320px] sm:pl-8 md:w-[400px] lg:w-2/5 flex flex-col ">
+      <h1 class="text-2xl">Sua felicidade é <D>nosso</D> compromisso</h1>
+      <p class="text-lg pt-3">Na Camdal, acreditamos que um atendimento 100% humanizado faz toda a diferença! Do primeiro contato até a devolução do veículo, nossa equipe está sempre pronta para ouvir, entender e oferecer a melhor solução para você.</p>
+    </div>
+    <div class="hidden sm:block">
+      <img src={banner.src} alt="Sobre a Camdal" class="absolute right-0 top-0 sm:w-[300px] sm:h-[500px] sm:object-cover md:h-[450px] lg:w-[450px] lg:object-none xl:w-auto xl:h-auto" />
+      <div class="bg-c-orange absolute h-[280px] w-[320px] md:w-[350px] md:h-[300px] lg:w-[30rem] lg:h-[16rem] xl:w-[42rem] xl:h-[20rem] 2xl:h-[24rem] -z-10 right-0 top-[50%] translate-y-[-50%]"></div>
+    </div>
+  </div>
+</section>

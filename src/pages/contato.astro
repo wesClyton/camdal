@@ -1,0 +1,51 @@
+---
+import Avaliacoes from "../components/Avaliacoes.astro";
+import BannerReserva from "../components/BannerReserva.astro";
+import ContainerPage from "../components/ContainerPage.astro";
+import D from "../components/D.astro";
+import Faq from "../components/Faq.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { Maps } from "../components/Maps";
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout title="Home" description="Home">
+  <Header />
+	<ContainerPage>
+    <BannerReserva/>
+    <div class="grid grid-cols-1 lg:grid-cols-5 max-w-6xl px-5 sm:px-0 mx-auto xl:mt-20 2xl:mt-36 gap-16">
+      <div class="col-span-2 flex flex-col justify-center gap-8">
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Entre em <D>contato</D></h2>
+          <p class="text-base font-light">Estamos sempre preparados para ajudar você no que for preciso. Dúvidas, solicitação ou sugestões? Entre em contato com a gente!</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Redes sociais</h2>
+          <div class="flex flex-col gap-2">
+            <p class="flex items-center gap-2 text-base mb-2 font-light"><span class="icon-instagram text-c-blue text-xl"></span>@camdallocadora</p>
+            <p class="flex items-center gap-2 text-base mb-2 font-light"><span class="icon-facebook text-c-blue text-xl"></span>@camdallocadora</p>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Email</h2>
+          <p class="flex items-center gap-2 text-base mb-2 font-light"><span class="material-symbols-outlined text-c-blue text-xl">mail</span>reserva@camdal.com.br</p>
+        </div>
+      </div>
+
+      <div class="col-span-3"><Maps client:only="react" showInfo /></div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-36">
+      <h2 class="text-2xl font-bold text-center mb-10">Dúvidas <D>frequentes</D></h2>
+      <Faq />
+    </div>
+
+    <div class="py-16">
+      <Avaliacoes />
+    </div>
+  </ContainerPage>
+  <Footer />
+</Layout>

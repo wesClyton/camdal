@@ -71,6 +71,7 @@ export function Maps({ showInfo }: { showInfo?: boolean }) {
           defaultZoom={18}
           gestureHandling={"greedy"}
           disableDefaultUI={true}
+          fullscreenControl={true}
         >
           <AdvancedMarker
             position={{
@@ -88,13 +89,11 @@ export function Maps({ showInfo }: { showInfo?: boolean }) {
 
       {showInfo && (
         <div className="flex flex-col items-center justify-center mt-4">
-          <p className="text-center text-sm font-light">
-            {locations[locale].address}
-            <br />
-            {locations[locale].whatsapp}
-            <br />
-            {locations[locale].phone}
-          </p>
+          <p className="flex items-center gap-2 text-base mb-2 font-light"><span className="material-symbols-outlined text-c-blue text-xl">pin_drop</span>{locations[locale].address}</p>
+          <div className="flex gap-5">
+            <p className="flex items-center gap-2 text-base mb-2 font-light"><span className="icon-whatsapp text-c-blue text-xl"></span>{locations[locale].whatsapp}</p>
+            <p className="flex items-center gap-2 text-base mb-2 font-light"><span className="material-symbols-outlined text-c-blue text-xl">call</span>{locations[locale].phone}</p>
+          </div>
         </div>
       )}
     </>

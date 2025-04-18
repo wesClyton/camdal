@@ -1,0 +1,58 @@
+.em-breve-page {
+  display: flex;
+  background-color: var(--grey-5);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .em-breve {
+    text-align: center;
+    display: block;
+    margin-top: 3em;
+  }
+
+  .box {
+    padding: 3em;
+    background-color: var(--white);
+    border-radius: 20px;
+
+    .contatos {
+
+      .iconetexto {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        padding: 0.25em 0;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+          width: 16px;
+          height: 16px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          &.telefone {
+            background-image: url(../images/contato/phone.png);
+          }
+          &.whats {
+            background-image: url(../images/contato/whats.png);
+          }
+          &.instagram {
+            background-image: url(../images/contato/instagram.png);
+          }
+          &.facebook {
+            background-image: url(../images/contato/facebook.png);
+          }
+          &.linkedin {
+            background-image: url(../images/contato/linkedin.png);
+          }
+          &.endereco {
+            background-image: url(../images/contato/pin.png);
+          }
+        }
+      }
+    }
+  }
+}

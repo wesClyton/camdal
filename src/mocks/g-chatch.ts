@@ -1,10 +1,14 @@
 import gchatchImg from "../assets/carros/g-c-hatch.png";
+import golFront from "../assets/carros/g-c-gatch/gol1.png";
+import golBack from "../assets/carros/g-c-gatch/gol2.png";
+import kaFront from "../assets/carros/g-c-gatch/ka1.png";
+import kaBack from "../assets/carros/g-c-gatch/ka2.png";
 
 export const gchatch = {
   id: 0,
   title: "Grupo C Hatch",
   subtitle: "Compacto / Econômico com 05 lugares",
-  images: [gchatchImg.src],
+  images: [gchatchImg.src, golFront.src, golBack.src, kaFront.src, kaBack.src],
   features: [
     {
       label: "Portas",

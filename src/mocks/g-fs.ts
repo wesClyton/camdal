@@ -1,19 +1,19 @@
-import gcehatchImg from "../assets/carros/g-ce-hatch.png";
-import etiosFront from "../assets/carros/g-ce-hatch/etios-hatch-1.png";
-import etiosBack from "../assets/carros/g-ce-hatch/etios-hatch-2.png";
-import hb20Front from "../assets/carros/g-ce-hatch/hb201.png";
-import hb20Back from "../assets/carros/g-ce-hatch/hb202.png";
+import gfsImage from "../assets/carros/g-c-hatch.png";
+import voyageFront from "../assets/carros/g-fs/voyage1.jpg";
+import voyageBack from "../assets/carros/g-fs/voyage2.jpg";
+import etiosFront from "../assets/carros/g-fs/etios1.png";
+import etiosBack from "../assets/carros/g-fs/etios2.png";
 
-export const gcehatch = {
-  id: 1,
-  title: "Grupo CE Hatch",
-  subtitle: "Compacto / Econômico Fast",
+export const gfs = {
+  id: 2,
+  title: "Grupo FS",
+  subtitle: "Intermediário Sedan",
   images: [
-    gcehatchImg.src,
+    gfsImage.src,
+    voyageFront.src,
+    voyageBack.src,
     etiosFront.src,
     etiosBack.src,
-    hb20Front.src,
-    hb20Back.src,
   ],
   features: [
     {
@@ -22,11 +22,11 @@ export const gcehatch = {
     },
     {
       label: "Porta Malas",
-      value: "257 litros",
+      value: "562 litros",
     },
     {
       label: "Motor",
-      value: "1.0 - 03 Cilindros",
+      value: "1.5",
     },
     {
       label: "Som interno",
@@ -38,7 +38,7 @@ export const gcehatch = {
     },
     {
       label: "Volante",
-      value: "Com regulagem",
+      value: "Com regulagem de altura",
     },
     {
       label: "Travas",
@@ -63,6 +63,18 @@ export const gcehatch = {
     {
       label: "Computador de bordo",
       value: 'Sim"',
+    },
+    {
+      label: "Ocupantes",
+      value: '05"',
+    },
+    {
+      label: "Banco",
+      value: 'Couro ou Tecido"',
+    },
+    {
+      label: "Câmbio",
+      value: '6 Marchas Mecânico"',
     },
   ],
 };

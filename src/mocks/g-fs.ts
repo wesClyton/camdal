@@ -5,7 +5,7 @@ import etiosFront from "../assets/carros/g-fs/etios1.png";
 import etiosBack from "../assets/carros/g-fs/etios2.png";
 
 export const gfs = {
-  id: 2,
+  id: 4,
   title: "Grupo FS",
   subtitle: "Intermediário Sedan",
   images: [

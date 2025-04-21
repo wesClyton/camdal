@@ -3,7 +3,7 @@ import yarisfront from "../assets/carros/g-fh/yarisHatch1.png";
 import yarisback from "../assets/carros/g-fh/yarisHatch2.png";
 
 export const gfh = {
-  id: 4,
+  id: 3,
   title: "Grupo FH",
   subtitle: "Intermediário Hatch Automático",
   images: [gfhImg.src, yarisfront.src, yarisback.src],

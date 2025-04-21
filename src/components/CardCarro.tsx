@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { gerarLinkWhatsApp } from "../scripts/getLinkWhatsapp";
 
 interface IProps {
   car: {
@@ -27,6 +28,11 @@ export function CardCarro({ car }: IProps) {
   const handleIndicatorClick = (index: number) => {
     setCurrentIndex(index);
     if (intervalRef.current) clearInterval(intervalRef.current); // Pausa o autoplay ao clicar
+  };
+
+  const gerarLink = () => {
+    const link = gerarLinkWhatsApp(car.title);
+    window.open(link, "_blank");
   };
 
   return (
@@ -79,7 +85,7 @@ export function CardCarro({ car }: IProps) {
 
         {/* Call to Action */}
         <div className="mt-6">
-          <button className="bg-c-orange hover:bg-c-blue hover:cursor-pointer text-white font-light px-6 py-2 rounded-md text-sm w-full">
+          <button onClick={() => gerarLink()} className="bg-c-orange hover:bg-c-blue hover:cursor-pointer text-white font-light px-6 py-2 rounded-md text-sm w-full">
             Reservar agora
           </button>
         </div>

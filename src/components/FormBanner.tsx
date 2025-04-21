@@ -6,6 +6,8 @@ import { useState } from "react";
 import { registerLocale } from "react-datepicker";
 import { ptBR } from "date-fns/locale"; // ou pt, ptPT etc
 import "../styles/CustomDateRangePicker.css";
+import { gerarLinkWhatsApp } from "../scripts/getLinkWhatsapp";
+import { formatarDataHora } from "../scripts/convert";
 
 registerLocale("pt-BR", ptBR);
 
@@ -18,8 +20,15 @@ export function FormBanner() {
   } = useForm();
 
   const onSubmit = (data: any) => {
-    console.log(data);
-    console.log(errors.example);
+    const link = gerarLinkWhatsApp(
+      "",
+      data.localRetirada,
+      formatarDataHora(data.dataRetirada),
+      data.localDevolucao,
+      formatarDataHora(data.dataDevolucao)
+    );
+
+    window.open(link, "_blank");
   };
 
   const [startDate, setStartDate] = useState(null);

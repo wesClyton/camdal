@@ -2,10 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { carData } from "../mocks/cars";
 import logoVertical from "../assets/logo-vertical.png";
+import { gerarLinkWhatsApp } from "../scripts/getLinkWhatsapp";
 
 export default function CarCarousel() {
   const [index, setIndex] = useState(0);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null); // Armazena o intervalo
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const car = carData[index];
 
   const nextSlide = () => {
@@ -13,28 +14,34 @@ export default function CarCarousel() {
   };
 
   const resetInterval = () => {
-    if (intervalRef.current) clearInterval(intervalRef.current); // Limpa o intervalo atual
-    intervalRef.current = setInterval(nextSlide, 3000); // Reinicia o intervalo
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(nextSlide, 4000);
   };
 
   useEffect(() => {
-    resetInterval(); // Inicia o intervalo ao montar o componente
+    resetInterval();
     return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current); // Limpa o intervalo ao desmontar
+      if (intervalRef.current) clearInterval(intervalRef.current);
     };
   }, []);
 
   const handleCategoryClick = (id: number) => {
-    setIndex(id); // Atualiza o índice manualmente
-    resetInterval(); // Reinicia o intervalo
+    setIndex(id);
+    resetInterval();
   };
+
+  const gerarLink = () => {
+    const link = gerarLinkWhatsApp(car.title);
+    window.open(link, "_blank");
+  };
+
 
   return (
     <section>
       <h2 className="max-w-96 m-auto text-2xl font-bold text-center mb-5">
         Conheça nossos carros mais alugados
       </h2>
-      <ul className="flex justify-center items-center mt-4">
+      <ul className="flex justify-center items-center mt-4 max-w-xl mx-auto flex-wrap gap-4">
         {carData.map((carro) => (
           <li
             key={`${carro.title}carlist`}
@@ -42,8 +49,8 @@ export default function CarCarousel() {
               index === carro.id
                 ? "bg-c-orange font-bold text-white"
                 : "bg-[#E9E9E6] font-light"
-            } rounded-full mx-2 cursor-pointer text-xs text-center py-3 px-4 transition duration-300`}
-            onClick={() => handleCategoryClick(carro.id)} // Chama a função ao clicar
+            } rounded-full cursor-pointer text-xs text-center py-3 px-4 transition duration-300 text-nowrap`}
+            onClick={() => handleCategoryClick(carro.id)}
           >
             {carro.title}
           </li>
@@ -92,12 +99,13 @@ export default function CarCarousel() {
                 ))}
               </ul>
 
-              <a
-                href="#"
-                className="h-11 flex items-center justify-center bg-c-orange text-white rounded transition duration-300 mt-6"
+              <button
+                type="button"
+                onClick={() => gerarLink()}
+                className="w-full h-11 flex items-center justify-center bg-c-orange text-white rounded transition duration-300 mt-6"
               >
                 Reservar Agora
-              </a>
+              </button>
             </motion.div>
           </AnimatePresence>
         </div>

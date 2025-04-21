@@ -12,7 +12,6 @@ import Localizacao from "../components/Localizacao.astro";
 import RodeComCamdal from "../components/RodeComCamdal.astro";
 import Layout from '../layouts/Layout.astro';
 import bgParallax from "../assets/bg-parallax.jpg";
-import "../styles/global.css";
 ---
 
 <Layout title="Home" description="Home">
@@ -24,6 +23,7 @@ import "../styles/global.css";
     <div class="mt-14 md:mt-0"><AtendimentoHumanizado /></div>
     <div class="py-28">
       <BannerAncora
+        link="sobre"
         title="Conheça sobre nós"
         description="Somos uma empresa especializada na locação de carros, modalidade RAC – Rent a Car. A Camdal foi criada, sempre buscando a Excelência no atendimento aos clientes."
         image={bgParallax.src}

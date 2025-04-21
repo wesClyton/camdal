@@ -2,15 +2,15 @@
 
 import logo from "../assets/logo-white.png"
 import logoVertical from "../assets/bg-logo.png"
-import D from "./D.astro";
 
 interface Props {
   title: string;
   description: string;
   image: string;
+  link: string;
 }
 
-const { title, description, image }: Props = Astro.props;
+const { title, description, image, link }: Props = Astro.props;
 
 ---
 
@@ -29,9 +29,9 @@ const { title, description, image }: Props = Astro.props;
       <p class="mb-6 text-sm font-light max-w-lg">
         {description}
       </p>
-      <button class="bg-c-orange hover:bg-c-blue hover:cursor-pointer text-white font-semibold py-2 px-6 rounded">
+      <a href={link} class="bg-c-orange hover:bg-c-blue hover:cursor-pointer text-white font-semibold py-2 px-6 rounded">
         Ver mais
-      </button>
+      </a>
     </div>
   </div>
 

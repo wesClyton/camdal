@@ -4,7 +4,6 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import SectionImageText from "../components/SectionImageText.astro";
 import Layout from '../layouts/Layout.astro';
-import "../styles/global.css";
 
 import mapa from "../assets/mapa.png";
 import sobre from "../assets/sobre-empresa.png";
@@ -98,7 +97,7 @@ import bgParallax from "../assets/bg-parallax-sobre.jpg";
         </div>
       </SectionImageText>
 
-      <div class="py-28"><BannerAncora title="Veja nossos veículos" description="Oferecemos uma gama de veículos diferenciados para melhor atender. Nossa frota está sempre pronta para ser utilizada, com manutenção em dia, e veículos limpos." image={bgParallax.src} /></div>
+      <div class="py-28"><BannerAncora link="nossos-carros" title="Veja nossos veículos" description="Oferecemos uma gama de veículos diferenciados para melhor atender. Nossa frota está sempre pronta para ser utilizada, com manutenção em dia, e veículos limpos." image={bgParallax.src} /></div>
 
       <SectionImageText image={mapa.src} alt="Area de atendimento Camdal" position="right">
         <div><h2 class="text-2xl font-bold mb-5">Localização <D>estratégica</D></h2>

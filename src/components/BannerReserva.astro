@@ -1,21 +1,30 @@
 ---
 
-import carBanner from "../assets/car-banner-home.png";
+import carBannerHome from "../assets/car-banner-home.png";
+import carBannerCarros from "../assets/car-banner-carros.png";
+
 import D from "./D.astro";
 import { FormBanner } from "./FormBanner";
 import BannerBgAnimated from "./BannerBgAnimated.astro";
+
+interface Props {
+  type: "home" | "carros";
+}
+
+const { type } = Astro.props as Props;
+
 ---
 
-<section class="h-[800px] xl:h-auto">
+<section class="h-[900px] sm:h-[700px] xl:h-auto">
   <BannerBgAnimated />
   <div class="flex flex-col sm:flex-row relative z-10 pt-20 px-10 sm:px-0 items-center h-[520px] sm:h-[460px] xl:h-[600px]">
-    <div class="w-full sm:w-[550px] flex flex-col sm:pl-8">
+    <div class="w-full sm:w-[550px] flex flex-col sm:pl-8 order-2 sm:order-1">
       <h1 class="text-2xl">A mobilidade e o <D>cuidado</D> que <D>você</D> precisa</h1>
       <p class="text-lg pt-3">com veículos novos e os melhores preços. <br> Conte com a gente!</p>
       <FormBanner client:only="react" />
     </div>
-    <div class="hidden sm:block">
-      <img src={carBanner.src} alt="Car Banner" />
+    <div class="order-1 sm:order-2">
+      <img src={type === "carros" ? carBannerCarros.src : carBannerHome.src } alt="Banner Carros" />
       <div class="bg-c-orange absolute h-[32.5rem] lg:w-[34rem] lg:h-[28rem] xl:w-[37.5rem] xl:h-[34rem] 2xl:h-[38rem] top-0 -z-10 right-0"></div>
     </div>
   </div>

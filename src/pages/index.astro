@@ -1,27 +1,34 @@
 ---
 import AtendimentoHumanizado from "../components/AtendimentoHumanizado.astro";
 import Avaliacoes from "../components/Avaliacoes.astro";
+import BannerAncora from "../components/BannerAncora.astro";
 import BannerReserva from "../components/BannerReserva.astro";
 import CarrouselCarros from "../components/CarrouselCarros";
 import ComoFunciona from "../components/ComoFunciona.astro";
-import ConhecaCamdal from "../components/ConhecaCamdal.astro";
 import ContainerPage from "../components/ContainerPage.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Localizacao from "../components/Localizacao.astro";
 import RodeComCamdal from "../components/RodeComCamdal.astro";
 import Layout from '../layouts/Layout.astro';
+import bgParallax from "../assets/bg-parallax.jpg";
 import "../styles/global.css";
 ---
 
 <Layout title="Home" description="Home">
   <Header />
 	<ContainerPage>
-    <BannerReserva/>
+    <BannerReserva type="home" />
     <div class="xl:mt-20 2xl:mt-36"><ComoFunciona  /></div>
     <div class="mt-14 md:mt-28"><CarrouselCarros client:only="react" /></div>
     <div class="mt-14 md:mt-0"><AtendimentoHumanizado /></div>
-    <div class="py-28"><ConhecaCamdal /></div>
+    <div class="py-28">
+      <BannerAncora
+        title="Conheça sobre nós"
+        description="Somos uma empresa especializada na locação de carros, modalidade RAC – Rent a Car. A Camdal foi criada, sempre buscando a Excelência no atendimento aos clientes."
+        image={bgParallax.src}
+      />
+    </div>
     <div class="mt-14"><Localizacao /></div>
     <div class="py-16"><Avaliacoes /></div>
     <div class="md:py-16 max-w-6xl m-auto"><RodeComCamdal /></div>

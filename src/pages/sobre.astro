@@ -1,6 +1,4 @@
 ---
-import BannerReserva from "../components/BannerReserva.astro";
-import BannerSobre from "../components/BannerSobre.astro";
 import ContainerPage from "../components/ContainerPage.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
@@ -16,14 +14,42 @@ import paranavai from "../assets/paranavai.png";
 import cianorte from "../assets/cianorte.png";
 import D from "../components/D.astro";
 import Avaliacoes from "../components/Avaliacoes.astro";
+import BannerSobre from "../components/BannerSobre.astro";
+import BannerAncora from "../components/BannerAncora.astro";
+import bgParallax from "../assets/bg-parallax-sobre.jpg";
 ---
 
 <Layout title="Home" description="Home">
   <Header />
 	<ContainerPage>
-    <div class="mb-20 lg:mb-16 xl:mb-24"><BannerSobre/></div>
+    <div class="mb-20 lg:mb-16 xl:mb-24">
+      <BannerSobre type="sobre">
+        <h1 class="text-2xl">Sua felicidade é <D>nosso</D> compromisso</h1>
+        <p class="text-lg pt-3">Na Camdal, acreditamos que um atendimento 100% humanizado faz toda a diferença! Do primeiro contato até a devolução do veículo, nossa equipe está sempre pronta para ouvir, entender e oferecer a melhor solução para você.</p>
+      </BannerSobre>
+    </div>
     <div class="flex flex-col gap-16 px-6 sm:px-0">
-        <SectionImageText image={loja.src} alt="Loja fisica da Camdal" position="right">
+      <SectionImageText image={sobre.src} alt="Sobre nossa empresa" position="left">
+        <div><h2 class="text-2xl font-bold mb-5">Sobre nossa <D>empresa</D></h2>
+        <div class="flex flex-col gap-4">
+          <p class="text-base font-light">
+            Somos uma empresa especializada na locação de carros, modalidade RAC – Rent a Car. A Camdal foi criada, sempre buscando a Excelência no atendimento aos clientes.
+          </p>
+
+          <p class="text-base font-light">
+            Quando alcançamos o entendimento completo das necessidades individuais de cada pessoa, nosso objetivo é atingido. Isto facilita na escolha do modelo de veículo a ser escolhido
+            e também no modelo de contrato locação, diário, semanal, quinzenal ou mensal. Nossos colaboradores estão treinados para encontrar a solução ideal a cada ocasião,
+            desde a simples locação para trabalho, uma viagem de final de ano com a família ou mesmo, para levar a noiva ao seu grande momento no altar.
+          </p>
+
+          <p class="text-base font-light">
+            Queremos que a experiência de locação de um automóvel aos nossos clientes, seja sempre única e com foco na confiança, e assim
+            estreitamos os laços com cada cliente atendido, gerando compromisso de longo prazo com cada indivíduo.
+          </p>
+        </div></div>
+      </SectionImageText>
+
+      <SectionImageText image={loja.src} alt="Loja fisica da Camdal" position="right">
         <div>
           <h2 class="text-2xl font-bold mb-5">Conheça <D>mais</D></h2>
           <div class="flex flex-col gap-4">
@@ -72,7 +98,22 @@ import Avaliacoes from "../components/Avaliacoes.astro";
         </div>
       </SectionImageText>
 
-      <SectionImageText image={cianorte.src} alt="Cianorte, capital do vestuário" position="right" >
+      <div class="py-28"><BannerAncora title="Veja nossos veículos" description="Oferecemos uma gama de veículos diferenciados para melhor atender. Nossa frota está sempre pronta para ser utilizada, com manutenção em dia, e veículos limpos." image={bgParallax.src} /></div>
+
+      <SectionImageText image={mapa.src} alt="Area de atendimento Camdal" position="right">
+        <div><h2 class="text-2xl font-bold mb-5">Localização <D>estratégica</D></h2>
+        <div class="flex flex-col gap-4">
+          <p class="text-base font-light">
+            Cianorte encontra-se localizada no Noroeste Paranaense. A Cidade está estrategicamente no centro, a uma distância média de 80 a 90 Km das vizinhas, Maringá, Campo Mourão, Umuarama e Paranavaí.
+          </p>
+
+          <p class="text-base font-light">
+            Paranavaí está localizada estrategicamente próxima de importantes rodovias, que facilitam o acesso e aproximam as divisas com São Paulo e Mato Grosso do Sul. A cidade faz parte da Mesorregião Noroeste Paranaense, e fica a 70 km de Maringá PR.
+          </p>
+        </div></div>
+      </SectionImageText>
+
+      <SectionImageText image={cianorte.src} alt="Cianorte, capital do vestuário" position="left" >
         <div><h2 class="text-2xl font-bold mb-5">Cianorte</h2>
         <div class="flex flex-col gap-4">
           <p class="text-base font-light">
@@ -90,7 +131,7 @@ import Avaliacoes from "../components/Avaliacoes.astro";
         </div></div>
       </SectionImageText>
 
-      <SectionImageText image={paranavai.src} alt="Paranavaí" position="left" >
+      <SectionImageText image={paranavai.src} alt="Paranavaí" position="right" >
         <div><h2 class="text-2xl font-bold mb-5">Paranavaí</h2>
         <div class="flex flex-col gap-4">
           <p class="text-base font-light">
@@ -112,38 +153,6 @@ import Avaliacoes from "../components/Avaliacoes.astro";
         </div></div>
       </SectionImageText>
 
-      <SectionImageText image={sobre.src} alt="Sobre nossa empresa" position="right">
-        <div><h2 class="text-2xl font-bold mb-5">Sobre nossa <D>empresa</D></h2>
-        <div class="flex flex-col gap-4">
-          <p class="text-base font-light">
-            Somos uma empresa especializada na locação de carros, modalidade RAC – Rent a Car. A Camdal foi criada, sempre buscando a Excelência no atendimento aos clientes.
-          </p>
-
-          <p class="text-base font-light">
-            Quando alcançamos o entendimento completo das necessidades individuais de cada pessoa, nosso objetivo é atingido. Isto facilita na escolha do modelo de veículo a ser escolhido
-            e também no modelo de contrato locação, diário, semanal, quinzenal ou mensal. Nossos colaboradores estão treinados para encontrar a solução ideal a cada ocasião,
-            desde a simples locação para trabalho, uma viagem de final de ano com a família ou mesmo, para levar a noiva ao seu grande momento no altar.
-          </p>
-
-          <p class="text-base font-light">
-            Queremos que a experiência de locação de um automóvel aos nossos clientes, seja sempre única e com foco na confiança, e assim
-            estreitamos os laços com cada cliente atendido, gerando compromisso de longo prazo com cada indivíduo.
-          </p>
-        </div></div>
-      </SectionImageText>
-
-      <SectionImageText image={mapa.src} alt="Area de atendimento Camdal" position="left">
-        <div><h2 class="text-2xl font-bold mb-5">Localização <D>estratégica</D></h2>
-        <div class="flex flex-col gap-4">
-          <p class="text-base font-light">
-            Cianorte encontra-se localizada no Noroeste Paranaense. A Cidade está estrategicamente no centro, a uma distância média de 80 a 90 Km das vizinhas, Maringá, Campo Mourão, Umuarama e Paranavaí.
-          </p>
-
-          <p class="text-base font-light">
-            Paranavaí está localizada estrategicamente próxima de importantes rodovias, que facilitam o acesso e aproximam as divisas com São Paulo e Mato Grosso do Sul. A cidade faz parte da Mesorregião Noroeste Paranaense, e fica a 70 km de Maringá PR.
-          </p>
-        </div></div>
-      </SectionImageText>
     </div>
 
     <div class="py-16"><Avaliacoes /></div>

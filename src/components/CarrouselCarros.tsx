@@ -1,22 +1,33 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { carData } from "../mocks/cars";
 import logoVertical from "../assets/logo-vertical.png";
 
 export default function CarCarousel() {
   const [index, setIndex] = useState(0);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null); // Armazena o intervalo
   const car = carData[index];
 
   const nextSlide = () => {
     setIndex((prev) => (prev + 1) % carData.length);
   };
 
+  const resetInterval = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current); // Limpa o intervalo atual
+    intervalRef.current = setInterval(nextSlide, 3000); // Reinicia o intervalo
+  };
+
   useEffect(() => {
-    let timer1 = setInterval(() => nextSlide(), 3 * 1000);
+    resetInterval(); // Inicia o intervalo ao montar o componente
     return () => {
-      clearTimeout(timer1);
+      if (intervalRef.current) clearInterval(intervalRef.current); // Limpa o intervalo ao desmontar
     };
   }, []);
+
+  const handleCategoryClick = (id: number) => {
+    setIndex(id); // Atualiza o índice manualmente
+    resetInterval(); // Reinicia o intervalo
+  };
 
   return (
     <section>
@@ -31,10 +42,8 @@ export default function CarCarousel() {
               index === carro.id
                 ? "bg-c-orange font-bold text-white"
                 : "bg-[#E9E9E6] font-light"
-            } rounded-full mx-2 cursor-pointer text-xs text-center  py-3 px-4 transition duration-300`}
-            onClick={() => {
-              setIndex(carro.id);
-            }}
+            } rounded-full mx-2 cursor-pointer text-xs text-center py-3 px-4 transition duration-300`}
+            onClick={() => handleCategoryClick(carro.id)} // Chama a função ao clicar
           >
             {carro.title}
           </li>

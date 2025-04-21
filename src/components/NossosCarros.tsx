@@ -32,7 +32,7 @@ export function NossosCarrosContent() {
   const getButtonClass = (isActive: boolean) =>
     `${
       isActive ? "bg-c-orange font-bold text-white" : "bg-[#E9E9E6] font-light"
-    } rounded-full mx-2 cursor-pointer text-xs text-center py-3 px-4 transition duration-300`;
+    } rounded-full cursor-pointer text-xs text-center py-3 px-4 transition duration-300 min-w-[125px]`;
 
   const filteredCars = index === -1 ? carData : carData.filter((carro) => carro.id === index);
 
@@ -41,7 +41,7 @@ export function NossosCarrosContent() {
       <h2 className="max-w-96 m-auto text-2xl font-bold text-center mb-5">
         Nossos <DR>Carros</DR>
       </h2>
-      <ul className="flex justify-center items-center mt-4 mb-6 max-w-2xl mx-auto">{renderButtons()}</ul>
+      <ul className="flex justify-center items-center mt-4 mb-6 max-w-2xl mx-auto flex-wrap gap-4">{renderButtons()}</ul>
 
       <div className="flex flex-col gap-8 max-w-5xl mx-auto">
         {filteredCars.map((carro) => (

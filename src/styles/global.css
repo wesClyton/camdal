@@ -42,3 +42,17 @@
 .react-datepicker-wrapper {
   width: 100%;
 }
+
+@keyframes scale-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-scale-pulse {
+  animation: scale-pulse 1.2s infinite;
+}

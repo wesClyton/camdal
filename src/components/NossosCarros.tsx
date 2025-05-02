@@ -4,7 +4,7 @@ import { DR } from "./DR";
 import { CardCarro } from "./CardCarro";
 
 export function NossosCarrosContent() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(-1);
 
   const renderButtons = () => (
     <>
@@ -43,9 +43,9 @@ export function NossosCarrosContent() {
       </h2>
       <ul className="flex justify-center items-center mt-4 mb-6 max-w-2xl mx-auto flex-wrap gap-4">{renderButtons()}</ul>
 
-      <div className="flex flex-col gap-8 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4"> {/* flex flex-col gap-8 max-w-5xl mx-auto */}
         {filteredCars.map((carro) => (
-          <CardCarro car={carro} key={carro.title} />
+          <div key={carro.title} className="col-span-1"><CardCarro car={carro} key={carro.title} /></div>
         ))}
       </div>
     </section>

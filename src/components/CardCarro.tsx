@@ -36,7 +36,7 @@ export function CardCarro({ car }: IProps) {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-8 p-8 md:p-14 bg-white rounded-2xl shadow-md w-full">
+    <div className="flex flex-col items-center justify-center gap-8 p-8 md:p-14 bg-white rounded-2xl shadow-md w-full h-full">
       {/* Image Carousel */}
       <div className="w-full lg:w-2/3 flex flex-col items-center mb-6 lg:mb-0 relative">
         <div className="w-full relative overflow-hidden h-64 sm:h-72 md:h-80">
@@ -68,13 +68,13 @@ export function CardCarro({ car }: IProps) {
       </div>
 
       {/* Car Info */}
-      <div className="w-full lg:w-1/3">
+      <div className="w-full">
         <div className="text-sm text-gray-800">
           <h2 className="text-2xl font-bold">{car.title}</h2>
           <p className="font-light mb-5">{car.subtitle}</p>
-          <ul className="grid grid-cols-2 gap-y-4 gap-x-8 text-sm md:text-base">
+          <ul className="grid grid-cols-3 gap-y-4 gap-x-8 text-sm md:text-base items-stretch">
             {car.features.map((f, i) => (
-              <li key={i} className="flex-1/2 text-xs">
+              <li key={i} className="text-xs col-span-1">
                 {f.label}
                 <br />
                 <strong>{f.value}</strong>

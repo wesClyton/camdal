@@ -73,9 +73,8 @@ export function FormBanner() {
                   dateFormat="Pp"
                   locale="pt-BR"
                   placeholderText="Data de devolução"
-                  timeCaption="Horario"
+                  timeCaption="Horário"
                   onChange={(date) => {
-                    console.log(`aaa`, date);
                     field.onChange(date);
                   }}
                   selected={field.value}
@@ -85,6 +84,33 @@ export function FormBanner() {
                     bg-c-white
                     rounded-lg
                   "
+                  filterDate={(date) => {
+                    const day = date.getDay();
+                    // Permitir apenas Segunda (1) a Sábado (6)
+                    return day !== 0; // Bloqueia Domingo (0)
+                  }}
+                  filterTime={(date) => {
+                    const day = date.getDay();
+                    const hours = date.getHours();
+                    const minutes = date.getMinutes();
+
+                    if (day === 6) {
+                      // Sábado: 08h00 às 11h45
+                      return (
+                        (hours === 8 && minutes >= 0) ||
+                        (hours === 9) ||
+                        (hours === 10) ||
+                        (hours === 11 && minutes <= 45)
+                      );
+                    } else if (day >= 1 && day <= 5) {
+                      // Segunda a Sexta: 08h00 às 17h45
+                      return (
+                        (hours >= 8 && hours < 17) ||
+                        (hours === 17 && minutes <= 45)
+                      );
+                    }
+                    return false; // Bloqueia horários fora das condições
+                  }}
                 />
               </InputIcon>
             )}

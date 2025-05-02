@@ -1,20 +1,12 @@
 import gfsImage from "../assets/carros/g-c-hatch.png";
 import voyageFront from "../assets/carros/g-fs/voyage1.jpg";
 import voyageBack from "../assets/carros/g-fs/voyage2.jpg";
-import etiosFront from "../assets/carros/g-fs/etios1.png";
-import etiosBack from "../assets/carros/g-fs/etios2.png";
 
 export const gfs = {
-  id: 4,
+  id: 5,
   title: "Grupo FS",
   subtitle: "Intermediário Sedan",
-  images: [
-    gfsImage.src,
-    voyageFront.src,
-    voyageBack.src,
-    etiosFront.src,
-    etiosBack.src,
-  ],
+  images: [gfsImage.src, voyageFront.src, voyageBack.src],
   features: [
     {
       label: "Portas",

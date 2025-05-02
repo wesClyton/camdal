@@ -1,20 +1,12 @@
 import gcehatchImg from "../assets/carros/g-ce-hatch.png";
 import etiosFront from "../assets/carros/g-ce-hatch/etios-hatch-1.png";
 import etiosBack from "../assets/carros/g-ce-hatch/etios-hatch-2.png";
-import hb20Front from "../assets/carros/g-ce-hatch/hb201.png";
-import hb20Back from "../assets/carros/g-ce-hatch/hb202.png";
 
 export const gcehatch = {
-  id: 1,
+  id: 2,
   title: "Grupo CE Hatch",
   subtitle: "Compacto / Econômico Fast",
-  images: [
-    gcehatchImg.src,
-    etiosFront.src,
-    etiosBack.src,
-    hb20Front.src,
-    hb20Back.src,
-  ],
+  images: [gcehatchImg.src, etiosFront.src, etiosBack.src],
   features: [
     {
       label: "Portas",

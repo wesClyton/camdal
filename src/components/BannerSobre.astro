@@ -24,7 +24,7 @@ const { type } = Astro.props as Props;
     <div class="order-1 sm:order-2">
       <img src={type === "contato" ? bannerContato.src : bannerSobre.src } alt="Sobre a Camdal" class="hidden sm:block sm:absolute sm:right-0 sm:top-0 sm:w-[300px] sm:h-[500px] sm:object-cover md:h-[450px] lg:w-[450px] lg:object-none xl:w-auto xl:h-auto" />
       <img src={type === "contato" ? bannerContatoMobile.src : bannerSobreMobile.src } alt="Sobre a Camdal" class="sm:hidden w-full h-auto object-cover mb-10" />
-      <div class="hidden sm:block bg-c-orange absolute h-[280px] w-[320px] md:w-[350px] md:h-[300px] lg:w-[30rem] lg:h-[16rem] xl:w-[42rem] xl:h-[20rem] 2xl:h-[24rem] -z-10 right-0 top-[50%] translate-y-[-50%]"></div>
+      <div class={`hidden sm:block  absolute h-[280px] w-[320px] md:w-[350px] md:h-[300px] lg:w-[30rem] lg:h-[16rem] xl:w-[42rem] xl:h-[20rem] 2xl:h-[24rem] -z-10 right-0 top-[50%] translate-y-[-50%] ${type === "contato" ? "bg-c-blue" : "bg-c-orange"}`}></div>
     </div>
   </div>
 </section>

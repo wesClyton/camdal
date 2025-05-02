@@ -1,20 +1,12 @@
 import ggxImage from "../assets/carros/g-gx.png";
-import dusterFront from "../assets/carros/g-gx/duster1.png";
-import dusterBack from "../assets/carros/g-gx/duster2.png";
 import tcrossFront from "../assets/carros/g-gx/tcross1.png";
 import tcrossback from "../assets/carros/g-gx/tcross2.png";
 
 export const ggx = {
-  id: 6,
+  id: 7,
   title: "Grupo GX",
   subtitle: "SUV automático",
-  images: [
-    ggxImage.src,
-    dusterFront.src,
-    dusterBack.src,
-    tcrossFront.src,
-    tcrossback.src,
-  ],
+  images: [ggxImage.src, tcrossFront.src, tcrossback.src],
   features: [
     {
       label: "Portas",

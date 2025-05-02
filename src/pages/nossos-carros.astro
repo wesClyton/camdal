@@ -7,6 +7,8 @@ import Layout from '../layouts/Layout.astro';
 import { NossosCarrosContent } from "../components/NossosCarros";
 import Avaliacoes from "../components/Avaliacoes.astro";
 import RodeComCamdal from "../components/RodeComCamdal.astro";
+import Faq from "../components/Faq.astro";
+import D from "../components/D.astro";
 ---
 
 <Layout title="Nossos Carros | Camdal – Conheça Nossa Frota de Veículos" description="Confira os carros disponíveis na Camdal. Veículos revisados, modernos e prontos para atender às suas necessidades com conforto, segurança e qualidade.">
@@ -14,6 +16,10 @@ import RodeComCamdal from "../components/RodeComCamdal.astro";
 	<ContainerPage>
     <BannerReserva type="carros" />
     <div class="xl:mt-20 2xl:mt-36"><NossosCarrosContent client:only="react" /></div>
+    <div class="max-w-6xl mx-auto mt-36">
+      <h2 class="text-2xl font-bold text-center mb-10">Dúvidas <D>frequentes</D></h2>
+      <Faq />
+    </div>
     <div class="py-16"><Avaliacoes /></div>
     <div class="md:py-16 max-w-6xl m-auto"><RodeComCamdal /></div>
   </ContainerPage>

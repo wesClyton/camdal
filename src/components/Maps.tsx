@@ -5,14 +5,18 @@ import {
   Marker,
 } from "@vis.gl/react-google-maps";
 import pin from "../assets/pin.png";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { locations } from "../mocks/locations";
 
 export function Maps({ showInfo }: { showInfo?: boolean }) {
   const [locale, setLocale] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-
+  const textNoInfo = useMemo(() => {
+    return locale === 0
+      ? "Cianorte fica no centro da região, próxima a Maringá, Umuarama, Campo Mourão e Paranavaí, facilitando o acesso rápido a diversos destinos."
+      : "Paranavaí está conectada às principais rodovias, com fácil acesso às divisas com São Paulo e Mato Grosso do Sul, a apenas 70 km de Maringá.";
+  }, [locale]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -79,6 +83,10 @@ export function Maps({ showInfo }: { showInfo?: boolean }) {
           </AdvancedMarker>
         </Map>
       </APIProvider>
+
+      {!showInfo && (
+        <p className="mt-8 font-light text-sm max-w-xl text-center mx-auto">{textNoInfo}</p>
+      )}
 
       {showInfo && (
         <div className="flex flex-col items-center justify-center mt-4">

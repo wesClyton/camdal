@@ -6,6 +6,7 @@ import { gerarLinkWhatsApp } from "../scripts/getLinkWhatsapp";
 
 export default function CarCarousel() {
   const [index, setIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false); // Estado para rastrear o hover
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const car = carData[index];
 
@@ -15,7 +16,12 @@ export default function CarCarousel() {
 
   const resetInterval = () => {
     if (intervalRef.current) clearInterval(intervalRef.current);
-    intervalRef.current = setInterval(nextSlide, 4000);
+    intervalRef.current = setInterval(() => {
+      if (!isHovered) {
+        // Só muda o slide se o mouse não estiver sobre o carrossel
+        nextSlide();
+      }
+    }, 4000);
   };
 
   useEffect(() => {
@@ -23,7 +29,7 @@ export default function CarCarousel() {
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, []);
+  }, [isHovered]);
 
   const handleCategoryClick = (id: number) => {
     setIndex(id);
@@ -35,9 +41,11 @@ export default function CarCarousel() {
     window.open(link, "_blank");
   };
 
-
   return (
-    <section>
+    <section
+      onMouseEnter={() => setIsHovered(true)} // Define isHovered como true ao passar o mouse
+      onMouseLeave={() => setIsHovered(false)} // Define isHovered como false ao sair com o mouse
+    >
       <h2 className="max-w-96 m-auto text-2xl font-bold text-center mb-5">
         Conheça nossos carros mais alugados
       </h2>

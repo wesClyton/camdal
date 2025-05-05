@@ -62,7 +62,7 @@ export const gcs = {
     },
     {
       label: "Cambio",
-      value: "Mecânico",
+      value: "Mecânico - 5 ou 6 marchas",
     },
     {
       label: "Banco",

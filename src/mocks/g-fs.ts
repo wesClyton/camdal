@@ -1,4 +1,4 @@
-import gfsImage from "../assets/carros/g-c-hatch.png";
+import gfsImage from "../assets/carros/g-fs.png";
 import voyageFront from "../assets/carros/g-fs/voyage1.jpg";
 import voyageBack from "../assets/carros/g-fs/voyage2.jpg";
 

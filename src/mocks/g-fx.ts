@@ -14,7 +14,7 @@ export const gfx = {
     },
     {
       label: "Porta Malas",
-      value: "562 litros",
+      value: "473 litros",
     },
     {
       label: "Vidros",

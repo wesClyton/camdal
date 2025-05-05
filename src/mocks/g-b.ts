@@ -13,11 +13,11 @@ export const gb = {
     },
     {
       label: "Porta Malas",
-      value: "215 litros",
+      value: "200 litros",
     },
     {
       label: "Motor",
-      value: "1.0 Fire Flex – 04 cilindros",
+      value: "1.0 Fire Flex – 03 cilindros",
     },
     {
       label: "Vidros",

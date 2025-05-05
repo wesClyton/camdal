@@ -6,7 +6,7 @@ export function gerarLinkWhatsApp(
   horaDevolucao?: string
 ): string {
   const baseURL = "https://api.whatsapp.com/send"; // Base URL do WhatsApp
-  const numeroTelefone = "5544991038369"; // Substitua pelo número de telefone com código do país
+  const numeroTelefone = "554430394721"; // Substitua pelo número de telefone com código do país
 
   // Cria a mensagem com os parâmetros fornecidos
   const mensagem = [

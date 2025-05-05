@@ -14,7 +14,7 @@ export const gchatch = {
     },
     {
       label: "Porta Malas",
-      value: "257 litros",
+      value: "285 litros",
     },
     {
       label: "Motor",

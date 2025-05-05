@@ -14,7 +14,7 @@ export const gfs = {
     },
     {
       label: "Porta Malas",
-      value: "562 litros",
+      value: "480 litros",
     },
     {
       label: "Motor",
@@ -66,7 +66,7 @@ export const gfs = {
     },
     {
       label: "Câmbio",
-      value: '6 Marchas Mecânico"',
+      value: '5 Marchas Mecânico"',
     },
   ],
 };

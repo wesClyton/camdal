@@ -6,6 +6,6 @@ import { gchatch } from "./g-chatch";
 import { gfs } from "./g-fs";
 import { gfx } from "./g-fx";
 import { ggx } from "./g-gx";
-import { gle } from "./g-le";
+import { grx } from "./g-rx";
 
-export const carData = [gb, gchatch, gcehatch, gcs, gfh, gfs, gfx, ggx, gle];
+export const carData = [gb, gchatch, gcehatch, gcs, gfh, gfs, gfx, ggx, grx];

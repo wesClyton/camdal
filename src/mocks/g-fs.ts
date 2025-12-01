@@ -1,12 +1,12 @@
 import gfsImage from "../assets/carros/g-fs.png";
-import voyageFront from "../assets/carros/g-fs/voyage1.jpg";
-import voyageBack from "../assets/carros/g-fs/voyage2.jpg";
+import onixgeFront from "../assets/carros/g-fs/onix-sedan-1.png";
+import onixgeBack from "../assets/carros/g-fs/onix-sedan-2.png";
 
 export const gfs = {
   id: 5,
   title: "Grupo FS",
   subtitle: "Intermediário Sedan",
-  images: [gfsImage.src, voyageFront.src, voyageBack.src],
+  images: [gfsImage.src, onixgeFront.src, onixgeBack.src],
   features: [
     {
       label: "Portas",

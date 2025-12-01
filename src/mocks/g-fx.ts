@@ -1,12 +1,14 @@
 import gFxImg from "../assets/carros/g-fx.png";
 import yarisFront from "../assets/carros/g-fx/yaris1.png";
 import yarisBack from "../assets/carros/g-fx/yaris2.png";
+import onixgeFront from "../assets/carros/g-fs/onix-sedan-1.png";
+import onixgeBack from "../assets/carros/g-fs/onix-sedan-2.png";
 
 export const gfx = {
   id: 6,
   title: "Grupo FX",
   subtitle: "Intermediário Sedan Automático",
-  images: [gFxImg.src, yarisFront.src, yarisBack.src],
+  images: [gFxImg.src, yarisFront.src, yarisBack.src, onixgeFront.src, onixgeBack.src],
   features: [
     {
       label: "Portas",
